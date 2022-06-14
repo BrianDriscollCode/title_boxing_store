@@ -1,0 +1,9 @@
+$base_color: white;
+$secondary_color: #3a3a3a;
+
+@mixin flex_direction_align_justify($direction, $itemAlign, $justify) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $itemAlign;
+    flex-direction: $direction;
+}

@@ -1,0 +1,141 @@
+@import "./_base_stylings.scss";
+
+$outer_container_size: 100%; 
+$inner_container_size: 70%;
+
+#product_div {
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+#image_banner {
+
+    width: $inner_container_size;
+    height: 300px;
+    margin-top: 22px;
+    background-size: 1280px 333px;
+    align-self: center;
+
+}
+
+#banner_text_area {
+
+    color: white;
+    position: relative;
+    height: 100%;
+}
+
+#banner_content_wrapper {
+
+    position: absolute;
+    bottom: 0;
+    padding: 15px 15px 35px 15px;
+    background-color: rgba(0, 0, 0, 0.4);
+
+}
+
+#banner_content_wrapper h3 {
+
+    margin: 0;
+    padding: 15px 0px 15px 0px;
+    font-size: 45px;
+
+}
+
+#product_content {
+
+    width: $inner_container_size;
+    @include flex_direction_align_justify(row, flex-start, center);
+    align-self: center;
+    padding-top: 15px;
+}
+
+//********* Product Area *********// 
+
+//********* Shopping Options *********//
+
+//styling found on page.js
+#shopping_options_container {
+
+    height: 100%;
+    width: 20%;
+
+
+}
+
+#shopping_options_title {
+
+    padding-left: 5px;
+    padding-bottom: 10px;
+    font-size: 1em;
+
+ 
+ }
+
+//styling(s) found on ShoppingOptions.js
+
+#shopping_options_wrapper {
+
+    background-color: rgb(212, 212, 212);
+
+}
+
+.shopping_options_category {
+
+    @include flex_direction_align_justify(row, center, space-between);
+    padding: 10px;
+    border-bottom: 1px solid rgb(139, 139, 139);
+
+}
+
+.shopping_options_dropdown {
+
+    background-color: rgb(201, 201, 201);
+
+}
+
+.shopping_options_inputs {
+
+    background-color: rgb(224, 224, 224);
+    border-bottom: 1px solid rgb(204, 204, 204);
+
+}
+
+.shopping_options_single_input {
+
+    padding: 10px;
+
+}
+
+
+
+
+//********* Item List *********//
+
+//styling found on page.js
+#item_list_container {
+
+    height: 50%;
+    width: 80%;
+
+}
+
+
+//styling(s) found on ItemList.js
+
+#item_list_wrapper {
+
+        @include flex_direction_align_justify(row, center, center);
+        flex-wrap: wrap;
+    
+}
+
+.single_item {
+
+    @include flex_direction_align_justify(column, center, center);
+    padding: 15px;
+
+}

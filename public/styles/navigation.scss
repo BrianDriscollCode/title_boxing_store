@@ -1,0 +1,107 @@
+@import "_base_stylings.scss";
+
+#navigation_container {
+
+    background-color: $secondary_color;
+    color: white;
+    width: 100%;
+    @include flex_direction_align_justify(row, center, center);
+    margin-top: 10px;
+    height: 50px;
+
+}
+
+#navigation_wrapper {
+    width: 65%;
+    @include flex_direction_align_justify(row, center, center);
+    height: 50px;
+    align-items: center;
+}
+
+#navigation_list {
+    margin: 0px;
+    width: 100%;
+    @include flex_direction_align_justify(row, center, space-between);
+    height: 50px;
+}
+
+
+#navigation_list li {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    text-align: center;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 0em;
+    word-spacing: 0px;
+}
+
+// ********* Menu Items ********* //
+
+#menu_item_1 {
+
+    border-left: 1px solid #666;
+    border-right: 1px solid #666;
+    
+}
+
+#menu_item_2 {
+
+    border-right: 1px solid #666;
+
+}
+
+#menu_item_3 {
+
+    border-right: 1px solid #666;
+
+}
+
+#menu_item_4 {
+
+    border-right: 1px solid #666;
+
+}
+
+#menu_item_5 {
+
+    border-right: 1px solid #666;
+
+}
+
+#menu_item_6 {
+
+    border-right: 1px solid #666;
+
+}
+
+//********* Shipping Info *********//
+
+#shipping_info_container {
+
+    width: 100%;
+    background-color: rgb(185, 185, 185);
+    display: flex;
+    justify-content: center;
+    
+
+}
+
+#shipping_info {
+
+    width: 80%;
+    @include flex_direction_align_justify(row, center, center);
+    height: 40px;
+    align-items: center;
+}
+
+#red_shipping_info {
+
+    color: #e21a36;
+    font-weight: 600;
+
+}
