@@ -1,5 +1,5 @@
 import React from "react"
-import { HashRouter, Route, Link } from "react-router-dom"
+import { HashRouter, Route } from "react-router-dom"
 
 import Header from "./header"
 import Footer from "./footer"
@@ -17,38 +17,41 @@ const App = () => {
 
         <div>
             
-            <Header />
-            <div id="main_body">
+            <HashRouter>
+                <Header />
+                    <div id="main_body">
 
-                <HashRouter>
+                        
+                            
 
-                    <Route path="/" exact component={HomePage}/>
+                        <Route path="/" exact component={HomePage}/>
 
-                    <Route path="/product/boxing_glove" render={() => (
+                        <Route path="/product/boxing_glove" render={() => (
 
-                        <ProductPage productSetter="boxing_glove" />
+                            <ProductPage productSetter="boxing_glove" />
 
-                    )}  />
+                        )}  />
 
-                    <Route path="/product/shoes" render={() => (
+                        <Route path="/product/shoes" render={() => (
 
-                        <ProductPage productSetter="shoes" />
+                            <ProductPage productSetter="shoes" />
 
-                    )}  />
+                        )}  />
 
-                    <Route path="/product/headgear" render={() => (
+                        <Route path="/product/headgear" render={() => (
 
-                        <ProductPage productSetter="headgear" />
+                            <ProductPage productSetter="headgear" />
 
-                    )}  />
+                        )}  />
 
-                    <Route path="/cart" exact component={CartPage} />
-                    <Route path="/checkout" exact component={CheckoutPage} />
+                        <Route path="/cart" exact component={CartPage} />
+                        <Route path="/checkout" exact component={CheckoutPage} />
 
-                </HashRouter>
+                    
 
-            </div>
-            <Footer />
+                    </div>
+                <Footer />
+            </HashRouter>
 
         </div>
 

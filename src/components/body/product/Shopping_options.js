@@ -6,7 +6,9 @@ import Price from "./options/Price";
 
 
 
-const Shopping_Options = ( { changeCategoryVariable } ) => {
+const Shopping_Options = ( { changeCategoryVariable, productSetter } ) => {
+
+    const [checked, setChecked] = useState(false)
 
     const [showCategory, setShowCategory] = useState(false)
     const [showPrice, setShowPrice] = useState(false)
@@ -18,12 +20,18 @@ const Shopping_Options = ( { changeCategoryVariable } ) => {
         switch(optionSetter) {
             case 'category':
                 setShowCategory(!showCategory);
+                setShowPrice(false)
+                setShowBrand(false)
                 break;
             case 'price':
                 setShowPrice(!showPrice);
+                setShowCategory(false)
+                setShowBrand(false)
                 break;
             case 'brand':
                 setShowBrand(!showBrand);
+                setShowPrice(false)
+                setShowCategory(false)
                 break
         }
 
@@ -43,7 +51,10 @@ const Shopping_Options = ( { changeCategoryVariable } ) => {
 
             {
                 showCategory ? 
-                    <Category changeCategoryVariable={changeCategoryVariable} /> :
+                    <Category 
+                        changeCategoryVariable={changeCategoryVariable}
+                        productSetter={productSetter}
+                    /> :
                     null
             }
 
@@ -71,7 +82,10 @@ const Shopping_Options = ( { changeCategoryVariable } ) => {
 
             {
                 showBrand ? 
-                    <Brand changeCategoryVariable={changeCategoryVariable} /> :
+                    <Brand 
+                        changeCategoryVariable={changeCategoryVariable}
+                        productSetter={productSetter} 
+                    /> :
                     null
             }
 

@@ -79,7 +79,11 @@ $inner_container_size: 70%;
 
 #shopping_options_wrapper {
 
-    background-color: rgb(212, 212, 212);
+    background-color: rgb(224, 222, 222);
+    border-top: 1px solid rgb(201, 201, 201);
+    border-bottom: 1px solid rgb(187, 187, 187);
+    border-right: 1px solid rgb(216, 214, 214);
+    border-left: 1px solid rgb(214, 214, 214);
 
 }
 
@@ -91,22 +95,34 @@ $inner_container_size: 70%;
 
 }
 
+.shopping_options_category:hover {
+
+    background-color: rgb(92, 91, 91);
+
+}
+
 .shopping_options_dropdown {
 
-    background-color: rgb(201, 201, 201);
+    background-color: rgb(218, 218, 218);
+
+}
+
+.shopping_options_dropdown {
+
+    background-color: rgb(131, 131, 131);
 
 }
 
 .shopping_options_inputs {
 
-    background-color: rgb(224, 224, 224);
+    background-color: rgb(235, 235, 235);
     border-bottom: 1px solid rgb(204, 204, 204);
 
 }
 
 .shopping_options_single_input {
 
-    padding: 10px;
+    padding: 15px;
 
 }
 
@@ -137,5 +153,24 @@ $inner_container_size: 70%;
 
     @include flex_direction_align_justify(column, center, center);
     padding: 15px;
+    width: 28%;
 
 }
+
+.item_button {
+
+    background: linear-gradient(180deg, rgba(198,28,52,1) 14%, rgba(226,26,54,1) 52%, rgba(226,26,54,1) 83%, rgba(226,26,54,1) 92%, rgba(226,26,54,1) 100%);
+    padding: 10px 30px 10px 30px;
+    border-radius: 5px;
+    border: 0px;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+
+}
+
+.item_button:hover {
+    background: linear-gradient(0deg, rgba(198,28,52,1) 14%, rgba(226,26,54,1) 52%, rgba(226,26,54,1) 83%, rgba(226,26,54,1) 92%, rgba(226,26,54,1) 100%);
+
+}
+

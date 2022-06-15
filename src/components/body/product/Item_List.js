@@ -18,7 +18,7 @@ const Item_List = ( { products, filterVariable, filterType } ) => {
                             <img src={product.mini_image} />
                             <h3> {product.name} </h3>
                             <p> ${product.price} </p>
-                            <button> See More </button>
+                            <button className="item_button"> Learn More </button>
                             
                         </div> 
                     
@@ -36,7 +36,7 @@ const Item_List = ( { products, filterVariable, filterType } ) => {
                             <img src={product.mini_image} />
                             <h3> {product.name} </h3>
                             <p> ${product.price} </p>
-                            <button> See More </button>
+                            <button className="item_button"> Learn More </button>
                             
                         </div> 
                     
@@ -56,7 +56,8 @@ const Item_List = ( { products, filterVariable, filterType } ) => {
                             <img src={product.mini_image} />
                             <h3> {product.name} </h3>
                             <p> ${product.price} </p>
-                            <button> See More </button>
+                            
+                            <button className="item_button"> Learn More </button>
                             
                         </div> 
                     
@@ -74,7 +75,7 @@ const Item_List = ( { products, filterVariable, filterType } ) => {
                             <img src={product.mini_image} />
                             <h3> {product.name} </h3>
                             <p> ${product.price} </p>
-                            <button> See More </button>
+                            <button className="item_button"> Learn More </button>
                             
                         </div> 
                     

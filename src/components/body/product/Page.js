@@ -20,7 +20,7 @@ import Shopping_Options from "./Shopping_options";
 //              Price
 //Tree 3. Item_List "print out items"
 
-const Product_Page = ( { chooseProduct, optionsOutput, products, productSetter } ) => {
+const Product_Page = ( { products, productSetter } ) => {
 
 
     const [filterVariable, setFilterVariable] = useState('');
@@ -41,18 +41,6 @@ const Product_Page = ( { chooseProduct, optionsOutput, products, productSetter }
 
     }, [])
 
-    console.log(productChooser)
-
-
-    // const get_product = async () => {
-    //     console.log('get product function')
-    //     await chooseProduct("boxing_gloves")
-    //     //await setProducts
-
-    // }
-
-    console.log(products)
-
 
     return (
         
@@ -67,7 +55,7 @@ const Product_Page = ( { chooseProduct, optionsOutput, products, productSetter }
                         
                         <h3 id="shopping_options_title"> Shopping Options </h3>
 
-                        <Shopping_Options changeCategoryVariable={changeCategoryVariable} />
+                        <Shopping_Options changeCategoryVariable={changeCategoryVariable} productSetter={productSetter}/>
                     </div>
 
                     <div id="item_list_container">

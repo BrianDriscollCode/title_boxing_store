@@ -173,9 +173,9 @@ const initial_product_list = [
     {
         type: "shoes", 
         name: "Title Boxing Shoes White",
-        category: "competition_shoes",
+        category: "Boxing_Competition_Shoes",
         price: 63.99, 
-        brand: 'title_boxing',
+        brand: 'Title_Boxing',
         quantity: 10, 
         mini_image: "/images/products/boxing_shoes/0001/single_display/title_shoes_white_tall_mini_0001.jpg",
         display_images: [
@@ -190,9 +190,9 @@ const initial_product_list = [
     {
         type: "shoes", 
         name: "Pro Mex Boxing Shoes",
-        category: "competition_shoes",
+        category: "Youth_Shoes",
         price: 86.99, 
-        brand: 'pro_mex',
+        brand: 'Pro_Mex',
         quantity: 10, 
         mini_image: "/images/products/boxing_shoes/0002/single_display/pro_mex_black_tall_mini_0002.jpg",
         display_images: [
@@ -207,7 +207,7 @@ const initial_product_list = [
     {
         type: "shoes", 
         name: "Adidas Boxing Shoes Tall Black",
-        category: "competition_shoes",
+        category: "Boxing_Competition_Shoes",
         price: 86.99, 
         brand: 'Adidas',
         quantity: 10, 
@@ -223,9 +223,9 @@ const initial_product_list = [
     {
         type: "shoes", 
         name: "Title Boxing Shoes White",
-        category: "competition_shoes",
+        category: "Boxing_Competition_Shoes",
         price: 121.99, 
-        brand: 'title_boxing',
+        brand: 'Title_Boxing',
         quantity: 10, 
         mini_image: "/images/products/boxing_shoes/0004/single_display/title_green_tall_mini_0004.jpg",
         display_images: [
@@ -239,9 +239,9 @@ const initial_product_list = [
     {
         type: "shoes", 
         name: "Title Boxing Shoes White",
-        category: "competition_shoes",
+        category: "Sparring_Shoes",
         price: 121.99, 
-        brand: 'title_boxing',
+        brand: 'Title_Boxing',
         quantity: 10, 
         mini_image: "/images/products/boxing_shoes/0005/single_display/title_black_tall_mini_0005.jpg",
         display_images: [
@@ -252,10 +252,105 @@ const initial_product_list = [
 
         ]
     },
+    {
+        type: "headgear", 
+        name: "Title Boxing Headgear Red",
+        category: "Competition_Headgear",
+        price: 121.99, 
+        brand: 'Title_Boxing',
+        quantity: 10, 
+        mini_image: "/images/products/head_gear/0001/single_display/title_head_gear_full_face_mini_0001.jpg",
+        display_images: [
+
+            "/images/products/head_gear/0001/title_head_gear_full_face_MAIN_0001.jpg",
+            "/images/products/head_gear/0001/title_head_gear_full_face_front_0001.jpg",
+            "/images/products/head_gear/0001/title_head_gear_full_face_side_0001.jpg",
+            "/images/products/head_gear/0001/title_head_gear_full_face_model_0_0001.jpg",
+
+        ]
+    },
+    {
+        type: "headgear", 
+        name: "Title Boxing Headgear Black",
+        category: "Competition_Headgear",
+        price: 121.99, 
+        brand: 'Title_Boxing',
+        quantity: 10, 
+        mini_image: "/images/products/head_gear/0002/single_display/title_head_gear_full_face_mini_0002.jpg",
+        display_images: [
+
+            "/images/products/head_gear/0002/title_head_gear_full_face_MAIN_0002.jpg",
+            "/images/products/head_gear/0002/title_head_gear_full_face_side_0002.jpg",
+            "/images/products/head_gear/0002/title_head_gear_full_face_model_0_0002.jpg",
+            "/images/products/head_gear/0002/title_head_gear_full_face_model_1_0002.jpg",
+        ]
+    },
+    {
+        type: "headgear", 
+        name: "Fighting Headgear White 3.0",
+        category: "Sparring_Headgear",
+        price: 81.99, 
+        brand: 'Fighting',
+        quantity: 10, 
+        mini_image: "/images/products/head_gear/0003/single_display/fighting_head_gear_full_face_mini_0003.jpg",
+        display_images: [
+
+            "/images/products/head_gear/0003/fighting_head_gear_full_face_MAIN_0003.jpg",
+            "/images/products/head_gear/0003/fighting_head_gear_full_face_side_0003.jpg",
+            "/images/products/head_gear/0003/fighting_head_gear_full_face_back_0003.jpg",
+            "/images/products/head_gear/0003/fighting_head_gear_full_face_front_0003.jpg",
+        ]
+    },
+    {
+        type: "headgear", 
+        name: "Fighting Headgear White 3.0",
+        category: "Sparring_Headgear",
+        price: 61.99, 
+        brand: 'Fighting',
+        quantity: 10, 
+        mini_image: "/images/products/head_gear/0004/single_display/fighting_head_gear_full_face_mini_0004.jpg",
+        display_images: [
+
+            "/images/products/head_gear/0004/fighting_head_gear_full_face_MAIN_0004.jpg",
+            "/images/products/head_gear/0004/fighting_head_gear_full_face_side_0004.jpg",
+            "/images/products/head_gear/0004/fighting_head_gear_full_face_model_0_0004.jpg",
+            "/images/products/head_gear/0004/fighting_head_gear_full_face_model_1_0004.jpg",
+            
+        ]
+    },
+    {
+        type: "headgear", 
+        name: "Viper Headgear Red Spar",
+        category: "Sparring_Headgear",
+        price: 41.99, 
+        brand: 'Viper',
+        quantity: 10, 
+        mini_image: "/images/products/head_gear/0005/single_display/viper_head_gear_full_face_mini_0005.jpg",
+        display_images: [
+
+            "/images/products/head_gear/0005/viper_head_gear_full_face_MAIN_0005.jpg",
+            "/images/products/head_gear/0005/viper_head_gear_full_face_side_0005.jpg",
+            "/images/products/head_gear/0005/viper_head_gear_full_face_model_0_0005.jpg",
+            "/images/products/head_gear/0005/viper_head_gear_full_face_model_1_0005.jpg",
+            
+        ]
+    },
+    {
+        type: "headgear", 
+        name: "Title Boxing Headgear Black Spar",
+        category: "Competition_Headgear",
+        price: 71.99, 
+        brand: 'Title_Boxing',
+        quantity: 10, 
+        mini_image: "/images/products/head_gear/0006/single_display/title_head_gear_full_face_mini_0006.jpg",
+        display_images: [
+
+            "/images/products/head_gear/0006/title_head_gear_full_face_MAIN_0006.jpg",
+            "/images/products/head_gear/0006/title_head_gear_full_face_side_0006.jpg",
+            "/images/products/head_gear/0006/title_head_gear_full_face_model_0_0006.jpg",
+            "/images/products/head_gear/0006/title_head_gear_full_face_model_1_0006.jpg",
+
+        ]
+    }
     
-    
-
-
-
-
 ]

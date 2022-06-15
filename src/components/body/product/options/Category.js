@@ -1,55 +1,47 @@
 import React, { useState } from 'react';
 import { connect } from "react-redux"
-import { optionsOutput } from "../../../../actions/index"
 
-const Category = ( { changeCategoryVariable, optionsOutput, options } ) => {
+const Category = ( { changeCategoryVariable, options, productSetter } ) => {
 
-    const [pageParams, setPageParams] = useState('');
+    const [checkedBox, setCheckedBox] = useState('')
+
+    const setOnChangeCheckBox = async (value) => {
+
+        await setCheckedBox(value)
+
+
+    }
 
     return (
         
         <div className="shopping_options_inputs">
-            <div className="shopping_options_single_input"> 
-                <input 
-                    type="checkbox" 
-                    value=""
-                    onClick={(e) => changeCategoryVariable(e.target.value, 'category')}  
-                /> 
-                <label> All </label>
+
+            {
+            options.filter(
+                
+                option => option.type.toLowerCase().includes(productSetter.toLowerCase()) && option.option == "category"
+            )
+            .map(category => (
+
+                       category.categories.map(text => 
+                        
+                        <div className="shopping_options_single_input"> 
+                                <input 
+                                    type="checkbox" 
+                                    checked={checkedBox == text}
+                                    value={text === 'All' ? '' : text}
+                                    onClick={(e) => changeCategoryVariable(e.target.value, 'category')}
+                                    onChange={() => setOnChangeCheckBox(text)}  
+                                /> 
+                                <label> {text.replace(/[^a-zA-Z]/g, " ")} </label>
+                            </div>
+
+                        )
+                        
+                )
+            )}
+
             </div>
-            <div className="shopping_options_single_input"> 
-                <input 
-                    type="checkbox" 
-                    value="Boxing_Competition_Gloves" 
-                    onClick={(e) => changeCategoryVariable(e.target.value, 'category')}
-                /> 
-                <label> Boxing Competition Gloves </label>
-            </div>
-            <div className="shopping_options_single_input"> 
-                <input 
-                    type="checkbox" 
-                    value="Youth_Gloves"
-                    onClick={(e) => changeCategoryVariable(e.target.value, 'category')} 
-                /> 
-                <label> Youth Gloves </label>
-            </div>
-            <div className="shopping_options_single_input"> 
-                <input 
-                    type="checkbox" 
-                    value="Sparring"
-                    onClick={(e) => changeCategoryVariable(e.target.value, 'category')}  
-                /> 
-                <label> Sparring/Work Gloves </label>
-            </div>
-            <div className="shopping_options_single_input"> 
-                <input 
-                    type="checkbox" 
-                    value="MMA"
-                    onClick={(e) => changeCategoryVariable(e.target.value, 'category')}  
-                /> 
-                <label> MMA Gloves </label>
-            </div>
-        </div>
 
     )
 
@@ -59,4 +51,4 @@ const mapStateToProps = (state) => {
     return { options: state.options }
 }
 
-export default connect(mapStateToProps, {optionsOutput} )(Category)
+export default connect(mapStateToProps)(Category)

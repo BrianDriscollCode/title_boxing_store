@@ -1,18 +1,11 @@
 export default (all_options = search_options_list, action) => {
 
-    console.log(action.type)
-    switch (action.type) {
-        case "boxing_gloves":
-            return all_options.filter(option => option.type == "boxing_gloves")
-            break;
-        default:
+    
             return all_options;
-            break
             console.log('All returned')
     }
 
 
-}
 
 const search_options_list = [
 
@@ -30,47 +23,46 @@ const search_options_list = [
     {
         type: 'boxing_gloves',
         option: "brand",
-        categories: [
+        brands: [
             "Title_Boxing",
             "Title_Boxing_MMA",
             "USA_Boxing",
             "Pro_Mex"
-        ]
+        ],        
     },
     {
-        type: 'boxing_shoes',
+        type: 'shoes',
         option: 'category',
         categories: [
-            "Boxing_Competition_shoes",
-            "Youth_shoes",
-            "Sparring_shoes"
+            "Boxing_Competition_Shoes",
+            "Youth_Shoes",
+            "Sparring_Shoes"
         ]
     },
     {
-        type: 'boxing_shoes',
+        type: 'shoes',
         option: "brand",
-        categories: [
-            "Title_shoes",
-            "Title_shoes_MMA",
-            "USA_shoes"
+        brands: [
+            "Title_Boxing",
+            "Pro_Mex",
+            "Adidas"
         ]
     },
     {
         type: 'headgear',
         option: 'category',
         categories: [
-            "Boxing_Competition_shoes",
-            "Youth_shoes",
-            "Sparring_shoes"
+            "Sparring_Headgear",
+            "Competition_Headgear"
         ]
     },
     {
         type: 'headgear',
         option: "brand",
-        categories: [
-            "Title_shoes",
-            "Title_shoes_MMA",
-            "USA_shoes"
+        brands: [
+            "Title_Boxing",
+            "Fighting",
+            "Viper"
         ]
     }
     
