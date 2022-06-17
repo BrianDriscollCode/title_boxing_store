@@ -17,3 +17,28 @@ export const optionsOutput = (optionType) => {
     }
 
 }
+
+export const accountActions = (setting, info) => {
+
+
+
+    return {
+
+        type: setting,
+        payload: info
+
+    }
+
+
+}
+
+export const currentAccount = (setting, info) => {
+
+    return {
+
+        type: setting,
+        payload: info
+
+    }
+
+}

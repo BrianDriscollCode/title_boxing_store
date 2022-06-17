@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 
 
+//Parent - Shopping_options.js
+
 const Price = ( { changeCategoryVariable } ) => {
 
     const [checkedBox, setCheckedBox] = useState('')

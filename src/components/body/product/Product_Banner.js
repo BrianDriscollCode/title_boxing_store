@@ -1,9 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
 
-//images
-import Boxing_Gloves from "../../../images/Banner-Headgear_1.jpg"
-
+//Parent - product/Page.js
 
 const Product_Banner = ( { banners, productSetter } ) => {
 

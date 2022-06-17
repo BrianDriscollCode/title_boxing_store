@@ -1,4 +1,5 @@
 import React, { useState } from "react"
+import { Link } from "react-router-dom" 
 import logo from "../../images/logo_titleboxingretail.jpg"
 import { Cart, PersonFill, Search } from "react-bootstrap-icons"
 
@@ -25,7 +26,7 @@ const Page_Header = () => {
                         <div className="non-visible"> Empty </div>
                         <div className="non-visible"> | </div>
                         <PersonFill />
-                        <a> Sign In </a> 
+                        <Link to="/login"> Sign In </Link> 
                         <div> | </div>
                         <Cart className="cart" />
                         <a className="cart"> Cart ({itemsInCart}) </a>

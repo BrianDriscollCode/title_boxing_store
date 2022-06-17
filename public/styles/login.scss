@@ -1,0 +1,161 @@
+.form_warning {
+
+    color: red;
+
+}
+
+.form_success {
+
+    color: green;
+}
+
+#login_page_container {
+
+    margin-left: auto;
+    margin-right: auto;
+    width: 65%;
+    padding-top: 20px;
+
+}
+
+#login_page_container hr {
+
+    color: rgb(231, 231, 231);
+    background-color: rgb(231, 231, 231);
+    border-color: rgb(231, 231, 231);
+
+}
+
+#login_page_container h2 {
+
+    font-size: 35px;
+
+}
+
+#login_page_container h3 {
+
+    font-size: 20px;
+    font-weight: 200;
+
+}
+
+#login_page_wrapper {
+
+    @include flex_direction_align_justify(row, none, space-between);
+
+}
+
+#login_container {
+
+    width: 50%
+
+}
+
+#login_form {
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+#login_form input {
+
+    width: 70%;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid rgb(160, 160, 160);
+    padding-left: 15px;
+    font-size: 18px;
+
+}
+
+.user_input_login {
+
+    display: flex;
+    flex-direction: column;
+    padding: 25px 0 0 0;
+
+}
+
+.user_input_login label {
+
+    padding-bottom: 5px;
+
+}
+
+.login_button {
+
+    margin: 30px 0 0 0;
+
+}
+/* New customer area */ 
+
+#new_customer_area {
+
+    width: 40%;
+
+}
+
+/* Changes for CreateAccount.js */
+
+#create_page_container {
+    
+    @include flex_direction_align_justify(column, none, center);
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+}
+
+#create_form {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.create_input_login {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px 0 0 0;
+}
+
+.create_input_login label {
+
+    padding-bottom: 5px;
+
+}
+
+#create_page_container h2 {
+
+    font-size: 35px;
+    align-self: center;
+
+}
+
+#create_page_wrapper {
+
+    width: 50%;
+    align-self: center;
+
+}
+
+#create_form input {
+    width: 70%;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid rgb(160, 160, 160);
+    padding-left: 15px;
+    font-size: 18px;
+}
+
+#create_account_button {
+
+    align-self: center!important;
+    display: flex;
+    justify-content: center;
+
+}

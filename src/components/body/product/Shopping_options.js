@@ -5,6 +5,7 @@ import Category from './options/Category';
 import Price from "./options/Price";
 
 
+//Parent - product/Page.js
 
 const Shopping_Options = ( { changeCategoryVariable, productSetter } ) => {
 
@@ -17,6 +18,7 @@ const Shopping_Options = ( { changeCategoryVariable, productSetter } ) => {
 
     const activateOption = (optionSetter) => {
 
+        //closes other search menus when others are opened
         switch(optionSetter) {
             case 'category':
                 setShowCategory(!showCategory);
@@ -39,6 +41,8 @@ const Shopping_Options = ( { changeCategoryVariable, productSetter } ) => {
 
     return (
 
+
+        /* Ternaries used to connect to individual menus via options folder*/
         <div id="shopping_options_wrapper"> 
 
             <div 

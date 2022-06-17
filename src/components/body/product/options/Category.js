@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
-import { connect } from "react-redux"
+import { connect } from "react-redux";
+
+//Parent - Shopping_options.js
 
 const Category = ( { changeCategoryVariable, options, productSetter } ) => {
 

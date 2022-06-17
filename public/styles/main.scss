@@ -1,11 +1,14 @@
 @import "./product_page.scss";
 @import "./header.scss";
 @import "./navigation.scss";
+@import "./single_product.scss";
+@import "./login.scss";
 
 
 
 body {
     margin: 0;
+    color: rgb(70, 70, 70);
 }
 
 #root {

@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { connect } from "react-redux"
 
 
+//Parent - Shopping_options.js
+
 const Brand = ( {changeCategoryVariable, options, productSetter} ) => {
 
     const [checkedBox, setCheckedBox] = useState('')
@@ -9,7 +11,6 @@ const Brand = ( {changeCategoryVariable, options, productSetter} ) => {
     const setOnChangeCheckBox = async (value) => {
 
         await setCheckedBox(value)
-
 
     }
 

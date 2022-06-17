@@ -1,7 +1,8 @@
 import React, {useState} from 'react';
+import { Link } from "react-router-dom"
 
 
-
+//Parent - product/Page.js
 
 const Item_List = ( { products, filterVariable, filterType } ) => {
 
@@ -18,7 +19,7 @@ const Item_List = ( { products, filterVariable, filterType } ) => {
                             <img src={product.mini_image} />
                             <h3> {product.name} </h3>
                             <p> ${product.price} </p>
-                            <button className="item_button"> Learn More </button>
+                            <Link to={`/product/${product.type}/${product.id}`}> <button className="item_button"> Learn More </button> </Link> 
                             
                         </div> 
                     
@@ -36,8 +37,8 @@ const Item_List = ( { products, filterVariable, filterType } ) => {
                             <img src={product.mini_image} />
                             <h3> {product.name} </h3>
                             <p> ${product.price} </p>
-                            <button className="item_button"> Learn More </button>
-                            
+                            <Link to={`/product/${product.type}/${product.id}`}> <button className="item_button"> Learn More </button> </Link> 
+            
                         </div> 
                     
                 ) : null
@@ -57,7 +58,7 @@ const Item_List = ( { products, filterVariable, filterType } ) => {
                             <h3> {product.name} </h3>
                             <p> ${product.price} </p>
                             
-                            <button className="item_button"> Learn More </button>
+                            <Link to={`/product/${product.type}/${product.id}`}> <button className="item_button"> Learn More </button> </Link>
                             
                         </div> 
                     
@@ -75,7 +76,7 @@ const Item_List = ( { products, filterVariable, filterType } ) => {
                             <img src={product.mini_image} />
                             <h3> {product.name} </h3>
                             <p> ${product.price} </p>
-                            <button className="item_button"> Learn More </button>
+                            <Link to={`/product/${product.type}/${product.id}`}> <button className="item_button"> Learn More </button> </Link> 
                             
                         </div> 
                     
