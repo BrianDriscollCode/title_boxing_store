@@ -31,14 +31,3 @@ export const accountActions = (setting, info) => {
 
 
 }
-
-export const currentAccount = (setting, info) => {
-
-    return {
-
-        type: setting,
-        payload: info
-
-    }
-
-}

@@ -34,6 +34,7 @@ const search_options_list = [
         type: 'shoes',
         option: 'category',
         categories: [
+            "All",
             "Boxing_Competition_Shoes",
             "Youth_Shoes",
             "Sparring_Shoes"
@@ -52,6 +53,7 @@ const search_options_list = [
         type: 'headgear',
         option: 'category',
         categories: [
+            "All",
             "Sparring_Headgear",
             "Competition_Headgear"
         ]

@@ -9,14 +9,15 @@ const Login = ( { accounts, accountActions, currentAccount } ) => {
     const [password, setPassword] = useState('');
 
     const [loginSuccess, setLoginSuccess] = useState(false);
-    const [usernameWrong, setUsernameWrong] = useState(false);
-    const [passwordWrong, setPasswordWrong] = useState(false);
+    const [loginFail, setLoginFail] = useState(false)
 
     useEffect(() => {
 
         console.log(currentAccount)
 
     }, [username])
+
+    console.log(accounts)
 
     const login = (e) => {
 
@@ -28,50 +29,32 @@ const Login = ( { accounts, accountActions, currentAccount } ) => {
 
         )
 
-        console.log(currentAccountFilter[0])
+        console.log(currentAccountFilter[0]?.username, username)
+        console.log(currentAccountFilter[0]?.password, password)
 
-        switch (currentAccountFilter[0]) {
+        if (currentAccountFilter[0]?.username == username && 
+            currentAccountFilter[0]?.password == password) {
 
-            case currentAccountFilter[0]?.username == username && currentAccountFilter[0]?.password == password:
+            console.log("success")
+            accountActions("SET_CURRENT_ACCOUNT", currentAccountFilter[0])
+            setLoginSuccess(true)
+            setLoginFail(false)
+        
+        } else if (currentAccountFilter[0]?.username != username &&
+                   currentAccountFilter[0]?.password != password) {
 
-                 console.log("success")
-                 accountActions("SET_CURRENT_ACCOUNT", currentAccountFilter[0])
-                 setLoginSuccess(true)
-                 setUsernameWrong(false)
-                 setPasswordWrong(false)
-                 break;
-            
-            case currentAccountFilter[0]?.username == username &&
-                 currentAccountFilter[0]?.password != password:
+            console.log("unsuccessful - wrong all")
+            setLoginSuccess(false)
+            setLoginFail(true)
+        } else {
 
-                 console.log("unsuccessful - wrong pass")
-                 setLoginSuccess(false)
-                 setUsernameWrong(false)
-                 setPasswordWrong(true)
-                 break;
-                
-
-            case currentAccountFilter[0]?.username != username &&
-                 currentAccountFilter[0]?.password == password:
-
-                 console.log("unsuccessful - wrong user")
-                 setLoginSuccess(false)
-                 setUsernameWrong(true)
-                 setPasswordWrong(false)
-                 break;
-
-            case currentAccountFilter[0]?.username != username &&
-                 currentAccountFilter[0]?.password != password:
-
-                 console.log("unsuccessful - wrong all")
-                 setLoginSuccess(false)
-                 setUsernameWrong(true)
-                 setPasswordWrong(true)
-                 break;
+            console.log('error')
 
         }
 
+        
     }
+
 
     return (
 
@@ -99,15 +82,14 @@ const Login = ( { accounts, accountActions, currentAccount } ) => {
                                 onChange={(e) => setUsername(e.target.value)}
                             />
                             {
-
-                                usernameWrong ?
-                                    <span className="form_warning"> username does not exist </span>:
+                                loginSuccess ?
+                                    <span className="form_success"> Successful login! </span>:
                                     null
-
                             }
                             {
-                                loginSuccess >
-                                    <span className="form_success"> Successful login! </span>
+                                loginFail ? 
+                                    <span className="form_warning"> Wrong login credentials </span>:
+                                    null
                             }
                         </div>
                          

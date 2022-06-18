@@ -33,6 +33,37 @@ export default (all_accounts = initial_accounts, action) => {
             console.log(account)
             return account;
             break;
+        case "ADD_ITEM":
+            console.log([...all_accounts])
+            console.log(action.payload)
+            
+            // const editableAccount = all_accounts.filter(
+                
+            //     account => account.username == action.payload.username
+                
+            // )
+            // console.log(editableAccount)
+
+            // return {...editableAccount, cart: action.payload}
+
+            const updatedCartAccounts = all_accounts.map(account => {
+
+                console.log(account.cart)
+
+                if (account.username == action.payload.username) {
+
+                    return {...account, cart: [...account.cart, action.payload.cart]}
+
+                } else {
+
+                    return {...account}
+
+                }
+
+            })
+
+            return updatedCartAccounts;
+
         default: 
             return [...all_accounts]
 
