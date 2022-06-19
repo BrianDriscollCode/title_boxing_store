@@ -28,6 +28,9 @@ const Price = ( { changeCategoryVariable } ) => {
                     type="checkbox" 
                     checked={checkedBox == 'one'}
                     value={[0,49.99]} 
+                    //sends the filter options back to Page.js to send to itemList to rerender
+                    //with new filter settings via a function in Page.js
+                    //Function passed: Page.js -> Shopping_options.js -> Brand.js
                     onClick={(e) => changeCategoryVariable(e.target.value.split(','), 'price')}
                     onChange={() => setOnChangeCheckBox('one')}
                 /> 
@@ -38,6 +41,9 @@ const Price = ( { changeCategoryVariable } ) => {
                     type="checkbox" 
                     checked={checkedBox == 'two'}
                     value={[50.00,69.99]}
+                    //sends the filter options back to Page.js to send to itemList to rerender
+                    //with new filter settings via a function in Page.js
+                    //Function passed: Page.js -> Shopping_options.js -> Brand.js
                     onClick={(e) => changeCategoryVariable(e.target.value.split(','), 'price')}
                     onChange={() => setOnChangeCheckBox('two')}
                 /> 
@@ -48,6 +54,9 @@ const Price = ( { changeCategoryVariable } ) => {
                     type="checkbox" 
                     checked={checkedBox == 'three'}
                     value={[70.00,99.99]} 
+                    //sends the filter options back to Page.js to send to itemList to rerender
+                    //with new filter settings via a function in Page.js
+                    //Function passed: Page.js -> Shopping_options.js -> Brand.js
                     onClick={(e) => changeCategoryVariable(e.target.value.split(','), 'price')}
                     onChange={() => setOnChangeCheckBox('three')}
                 /> 
@@ -57,7 +66,10 @@ const Price = ( { changeCategoryVariable } ) => {
                 <input 
                     type="checkbox" 
                     checked={checkedBox == 'four'}
-                    value={[100.00, 199.99]} 
+                    value={[100.00, 199.99]}
+                    //sends the filter options back to Page.js to send to itemList to rerender
+                    //with new filter settings via a function in Page.js
+                    //Function passed: Page.js -> Shopping_options.js -> Brand.js 
                     onClick={(e) => changeCategoryVariable(e.target.value.split(','), 'price')}
                     onChange={() => setOnChangeCheckBox('four')}
                 /> 
@@ -68,6 +80,9 @@ const Price = ( { changeCategoryVariable } ) => {
                     type="checkbox" 
                     checked={checkedBox == 'five'}
                     value={[200.00, 399.99]} 
+                    //sends the filter options back to Page.js to send to itemList to rerender
+                    //with new filter settings via a function in Page.js
+                    //Function passed: Page.js -> Shopping_options.js -> Brand.js
                     onClick={(e) => changeCategoryVariable(e.target.value.split(','), 'price')}
                     onChange={() => setOnChangeCheckBox('five')}
                 /> 

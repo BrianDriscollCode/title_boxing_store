@@ -4,6 +4,14 @@ import { Link } from "react-router-dom"
 
 //Parent - product/Page.js
 
+//FilterType "all(''), category, price, brand " dictates how to filter
+//products before rendering to screen
+
+//FilterVariable, depending on filtertype, is used to filter products
+//based on strings (name, brand) or integers (price)
+
+//Products are passed via product/page.js (parent), here they are filtered
+
 const Item_List = ( { products, filterVariable, filterType } ) => {
 
     return (

@@ -24,8 +24,9 @@ const CreateAccount = ( {accounts, accountActions} ) => {
 
             account => account.username.toLowerCase() == username.toLowerCase().trim()
         
-            )
+        )
 
+        //if matching username in "DB", send back error, if not, create account
         if (accountComparison[0]?.username.toLowerCase() != username.toLowerCase()) {
 
             accountActions("ADD_ACCOUNT", {username: username.toLowerCase().trim(), password: password, cart: []})

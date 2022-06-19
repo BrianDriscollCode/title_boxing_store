@@ -1,5 +1,7 @@
 import React from "react"
 
+//Parent single/Item_Page.js
+
 const Details = ( { product, addToCart } ) => {
 
     return (
@@ -25,7 +27,7 @@ const Details = ( { product, addToCart } ) => {
             <button 
                 className="item_button"    
                 id="item_button_details_page"
-                onClick={() => addToCart(product[0].name, product[0].id)}
+                onClick={() => addToCart(product[0])}
             > Add to Cart </button>
             
 

@@ -4,6 +4,9 @@ import { connect } from "react-redux"
 
 //Parent - Shopping_options.js
 
+//options contains all possible filtering options via redux
+//productSetter is used to get those specific options from object received via redux
+
 const Brand = ( {changeCategoryVariable, options, productSetter} ) => {
 
     const [checkedBox, setCheckedBox] = useState('')
@@ -32,7 +35,10 @@ const Brand = ( {changeCategoryVariable, options, productSetter} ) => {
                                     type="checkbox" 
                                     checked={checkedBox == text}
                                     value={text}
-                                    onClick={(e) => changeCategoryVariable(e.target.value, 'brand')}
+                                    //sends the filter options back to Page.js to send to itemList to rerender
+                                    //with new filter settings via a function in Page.js
+                                    //Function passed: Page.js -> Shopping_options.js -> Brand.js
+                                    onClick={(e) => changeCategoryVariable(e.target.value, 'brand')} 
                                     onChange={() => setOnChangeCheckBox(text)}  
                                 /> 
                                 <label> {text.replace(/[^a-zA-Z]/g, " ")} </label>
@@ -44,33 +50,6 @@ const Brand = ( {changeCategoryVariable, options, productSetter} ) => {
             )}
 
             </div>
-
-        // <div className="shopping_options_inputs">
-        //     <div className="shopping_options_single_input"> 
-        //         <input 
-        //             type="checkbox" 
-        //             value="Title_Boxing" 
-        //             onClick={(e) => changeCategoryVariable(e.target.value, 'brand')}
-        //         /> 
-        //         <label> Title Boxing </label>
-        //     </div>
-        //     <div className="shopping_options_single_input"> 
-        //         <input 
-        //             type="checkbox" 
-        //             value="Title_Boxing_MMA"
-        //             onClick={(e) => changeCategoryVariable(e.target.value, 'brand')}
-        //         /> 
-        //     <label> Title Boxing MMA </label>
-        //     </div>
-        //     <div className="shopping_options_single_input"> 
-        //         <input 
-        //             type="checkbox"  
-        //             value="USA_Boxing" 
-        //             onClick={(e) => changeCategoryVariable(e.target.value, 'brand')}
-        //         /> 
-        //         <label> USA Boxing </label>
-        //     </div>
-        // </div>
 
     )
 

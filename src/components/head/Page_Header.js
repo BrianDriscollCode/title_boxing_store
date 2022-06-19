@@ -1,13 +1,15 @@
-import React, { useState } from "react"
+import React, { useEffect, useState } from "react"
 import { Link } from "react-router-dom" 
 import logo from "../../images/logo_titleboxingretail.jpg"
 import { Cart, PersonFill, Search } from "react-bootstrap-icons"
 
+//Parent - src/header.js
 
-const Page_Header = () => {
+const Page_Header = ( { cartAmount } ) => {
 
 
     const [itemsInCart , setItemsInCart] = useState(0)
+    console.log(cartAmount)
 
     return (
 
@@ -29,7 +31,7 @@ const Page_Header = () => {
                         <Link to="/login"> Sign In </Link> 
                         <div> | </div>
                         <Cart className="cart" />
-                        <a className="cart"> Cart ({itemsInCart}) </a>
+                        <Link to="/cart" className="cart"> Cart ({cartAmount}) </Link>
 
                     </div>
 

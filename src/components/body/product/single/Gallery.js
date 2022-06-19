@@ -2,6 +2,10 @@ import React, { useState } from "react";
 import { ChevronCompactLeft } from "react-bootstrap-icons";
 import { FaRegArrowAltCircleLeft, FaRegArrowAltCircleRight } from "react-icons/fa"
 
+//Parent single/Item_Page.js
+
+//Basic Gallery functionality using controlled component and counters
+
 const Item_Gallery = ( { images } ) => {
 
     const [current, setCurrent] = useState(0)
@@ -9,7 +13,6 @@ const Item_Gallery = ( { images } ) => {
     const length = images[0].length - 1;
 
     const setImageOnPicker = (pickedImage) => {
-
 
             setCurrent(pickedImage)
     

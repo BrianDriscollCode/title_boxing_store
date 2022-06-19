@@ -3,9 +3,9 @@ import { connect } from "react-redux";
 
 //Parent - product/Page.js
 
-const Product_Banner = ( { banners, productSetter } ) => {
+//sets banner based on url
 
-    console.log(banners)
+const Product_Banner = ( { banners, productSetter } ) => {
 
     return (
 

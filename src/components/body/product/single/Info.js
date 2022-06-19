@@ -1,5 +1,7 @@
 import React from "react";
 
+//Parent single/Item_Page.js
+
 const Item_Info = ( { info } ) => {
 
     return (

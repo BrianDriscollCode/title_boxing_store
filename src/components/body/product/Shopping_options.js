@@ -7,6 +7,11 @@ import Price from "./options/Price";
 
 //Parent - product/Page.js
 
+//Component lets user set category, brand, or price filtering options
+
+//Each filtering option opens up when clicked and these are stored in
+//there own components @ product/options/(Brand.js, Category.js, Price.js)
+
 const Shopping_Options = ( { changeCategoryVariable, productSetter } ) => {
 
     const [checked, setChecked] = useState(false)

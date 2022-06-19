@@ -11,17 +11,12 @@ const Login = ( { accounts, accountActions, currentAccount } ) => {
     const [loginSuccess, setLoginSuccess] = useState(false);
     const [loginFail, setLoginFail] = useState(false)
 
-    useEffect(() => {
-
-        console.log(currentAccount)
-
-    }, [username])
-
-    console.log(accounts)
-
     const login = (e) => {
 
         e.preventDefault();
+
+        //checks to see if no account exists with same name before creating 
+        //and then stores it for check
         const currentAccountFilter = accounts.filter(
 
             account => account.username.toLowerCase() == username.toLowerCase() &&
@@ -29,9 +24,7 @@ const Login = ( { accounts, accountActions, currentAccount } ) => {
 
         )
 
-        console.log(currentAccountFilter[0]?.username, username)
-        console.log(currentAccountFilter[0]?.password, password)
-
+        //check for matching accounts then set current account or error status
         if (currentAccountFilter[0]?.username == username && 
             currentAccountFilter[0]?.password == password) {
 

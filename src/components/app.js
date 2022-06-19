@@ -17,7 +17,8 @@ import Item_Page from "./body/product/single/Item_Page";
 
 
 const App = ( { products } ) => {
-    
+
+
     return (
 
         <div>
@@ -50,7 +51,9 @@ const App = ( { products } ) => {
 
                         )}  />
 
-                        {/* Routing all the individual products to product/single/Item_Page*/}
+                        {/* Routing all the individual products to product/single/Item_Page'
+                        
+                            Uses the url structure to decide what product to show        */}
                         
                         {
 
@@ -69,6 +72,7 @@ const App = ( { products } ) => {
                         ))
 
                         }    
+
 
                         <Route path="/cart" exact component={CartPage} />
                         <Route path="/checkout" exact component={CheckoutPage} />
@@ -89,7 +93,7 @@ const App = ( { products } ) => {
 
 const mapStateToProps = (state) => {
 
-    return {products: state.products};
+    return { products: state.products };
 
 }
 

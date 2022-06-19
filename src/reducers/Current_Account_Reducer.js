@@ -15,8 +15,8 @@ export default (current_account = initial_account, action) => {
 const initial_account = [
 
     {
-        username: "GUEST",
-        password: null,
+        username: "guest",
+        password: "password",
         cart: []
 
     }
