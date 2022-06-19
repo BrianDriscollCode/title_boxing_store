@@ -1,3 +1,4 @@
+@import "./home_page.scss";
 @import "./product_page.scss";
 @import "./header.scss";
 @import "./navigation.scss";
@@ -25,14 +26,5 @@ ul {
 a {
 
     text-decoration: none;
-
-}
-
-
-
-.page_div {
-
-    display: flex;
-    justify-content: center;
 
 }

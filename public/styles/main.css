@@ -1,3 +1,85 @@
+.page_div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+#home_page_container {
+  width: 100%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+/* Banner */
+#home_banner {
+  position: relative;
+  text-align: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#home_banner_image {
+  width: 100%;
+}
+
+#heroTag {
+  position: absolute;
+  bottom: 33%;
+  left: 50px;
+  color: white;
+  text-align: left;
+  padding: 20px;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+#heroTag h2 {
+  font-size: 50px;
+  margin: 0px;
+}
+
+#heroTag p {
+  font-size: 18px;
+}
+
+/* Reel */
+#home_reel {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.reel_images {
+  padding: 10px 40px 10px 40px;
+  width: 16.6667%;
+}
+
+.single_reel_image {
+  height: auto;
+  width: 100%;
+}
+
 #product_div {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -813,14 +895,5 @@ ul {
 
 a {
   text-decoration: none;
-}
-
-.page_div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 /*# sourceMappingURL=main.css.map */

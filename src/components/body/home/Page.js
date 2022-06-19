@@ -1,16 +1,38 @@
 import React from "react";
+import Home_Banner from "./Banner";
+import Home_Reel from "./Reel";
+import { connect } from "react-redux" 
 
-const Home_Page = () => {
+const Home_Page = ( { products } ) => {
+
+    console.log(products)
 
 
     return (
         
 
-        <div className="page_div"> home_Page </div>
+        <div className="page_div">
+
+            <div id="home_page_container">
+                
+                <Home_Banner />
+                <Home_Reel products={products} />
+
+            </div>
+
+            
+
+        </div>
 
     )
 
 
 }
 
-export default Home_Page
+const mapStateToProps = (state) => {
+
+    return { products: state.products }
+
+}
+
+export default connect(mapStateToProps)(Home_Page)

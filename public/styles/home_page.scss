@@ -1,0 +1,87 @@
+.page_div {
+
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+}
+
+#home_page_container {
+
+    width: 100%;
+    align-self: center;
+
+
+}
+
+/* Banner */
+
+#home_banner {
+
+    position: relative;
+    text-align: center;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+
+}
+
+#home_banner_image {
+
+    width: 100%;
+
+}
+
+#heroTag {
+
+    position: absolute;
+    bottom: 33%;
+    left: 50px;
+    color: white;
+    text-align: left;
+    padding: 20px;
+    border-radius: 10px;
+    background: rgba($color: #000000, $alpha: .4);
+
+}
+
+#heroTag h2 {
+
+    font-size: 50px;
+    margin: 0px;
+
+}
+
+#heroTag p {
+
+    font-size: 18px;
+
+}
+
+/* Reel */ 
+
+#home_reel {
+
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+    
+}
+
+
+.reel_images {
+
+    padding: 10px 40px 10px 40px;
+    width: 16.6667%;
+}
+
+.single_reel_image {
+
+    height:auto;
+    width: 100%;
+
+}
+
+
