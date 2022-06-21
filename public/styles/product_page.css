@@ -159,6 +159,21 @@
   width: 28%;
 }
 
+#add_cart_div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+#added_to_cart {
+  margin-top: 42px;
+  margin-left: 15px;
+}
+
 .item_button {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(14%, #c61c34), color-stop(52%, #e21a36), color-stop(83%, #e21a36), color-stop(92%, #e21a36), to(#e21a36));
   background: linear-gradient(180deg, #c61c34 14%, #e21a36 52%, #e21a36 83%, #e21a36 92%, #e21a36 100%);
@@ -173,5 +188,33 @@
 .item_button:hover {
   background: -webkit-gradient(linear, left bottom, left top, color-stop(14%, #c61c34), color-stop(52%, #e21a36), color-stop(83%, #e21a36), color-stop(92%, #e21a36), to(#e21a36));
   background: linear-gradient(0deg, #c61c34 14%, #e21a36 52%, #e21a36 83%, #e21a36 92%, #e21a36 100%);
+}
+
+.item_button.button_product_page {
+  opacity: 0;
+}
+
+.single_item:hover .item_button.button_product_page {
+  -webkit-animation: hoverButton 0.5s;
+          animation: hoverButton 0.5s;
+  opacity: 1;
+}
+
+@-webkit-keyframes hoverButton {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes hoverButton {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 /*# sourceMappingURL=product_page.css.map */

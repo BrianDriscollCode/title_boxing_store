@@ -82,8 +82,6 @@ const Item_Page = ( { productType, productId, products, currentAccount, accountA
         
 
         <div id="single_item_page"> 
-        
-        <button onClick={() => getCurrentAccount()}> </button> 
 
             <div id="single_item_product_information">
                 <Item_Gallery images={images} productType={productType} />

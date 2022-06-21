@@ -87,7 +87,7 @@
 
 .slide {
     opacity: 0;
-    transition-duration: 3s ease;
+    transition: all 3s ease-in;
     
 }
 
@@ -95,8 +95,20 @@
     height: 100%; 
     width: 100%; 
     object-fit: contain;
+    animation: visible 1s;
     opacity: 1;
-    transition-duration: 3s ease;
+
+}
+
+@keyframes visible {
+    from {
+        opacity: 0;
+        transform: translateX(102px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
 
 }
 

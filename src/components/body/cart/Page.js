@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from "react";
+import { ChevronCompactLeft } from "react-bootstrap-icons";
 import { connect } from "react-redux";
 
 import Shopping_Cart from "./Shopping_Cart";
+import Shopping_Summary from "./Summary";
 
 const Cart_Page = ( { accounts, currentAccount } ) => {
 
@@ -29,14 +31,22 @@ const Cart_Page = ( { accounts, currentAccount } ) => {
         setCurrentCart(pageAccount[0]?.cart)
     })
 
+    console.log(currentAccount)
+
     return (
         
 
-        <div className="page_div">
+        <div className="cart_page_div">
 
-            <h2> Cart </h2> 
 
-            <Shopping_Cart cart_items={currentCart} />
+            <div id="cart_page_container">
+
+                <Shopping_Cart cart_items={currentCart} />
+                <Shopping_Summary cart_items={currentCart} />
+                
+            </div>
+
+            
         
         </div>
 

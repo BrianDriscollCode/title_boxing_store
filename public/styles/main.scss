@@ -4,6 +4,7 @@
 @import "./navigation.scss";
 @import "./single_product.scss";
 @import "./login.scss";
+@import "./cart.scss";
 
 
 
@@ -26,5 +27,11 @@ ul {
 a {
 
     text-decoration: none;
+
+}
+
+.alert_text {
+
+    color: rgba(198,28,52,1);
 
 }

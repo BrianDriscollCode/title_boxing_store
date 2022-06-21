@@ -27,7 +27,7 @@ const Item_List = ( { products, filterVariable, filterType } ) => {
                             <img src={product.mini_image} />
                             <h3> {product.name} </h3>
                             <p> ${product.price} </p>
-                            <Link to={`/product/${product.type}/${product.id}`}> <button className="item_button"> Learn More </button> </Link> 
+                            <Link to={`/product/${product.type}/${product.id}`}> <button className="item_button button_product_page"> Learn More </button> </Link> 
                             
                         </div> 
                     
@@ -45,7 +45,7 @@ const Item_List = ( { products, filterVariable, filterType } ) => {
                             <img src={product.mini_image} />
                             <h3> {product.name} </h3>
                             <p> ${product.price} </p>
-                            <Link to={`/product/${product.type}/${product.id}`}> <button className="item_button"> Learn More </button> </Link> 
+                            <Link to={`/product/${product.type}/${product.id}`}> <button className="item_button button_product_page"> Learn More </button> </Link> 
             
                         </div> 
                     
@@ -66,7 +66,7 @@ const Item_List = ( { products, filterVariable, filterType } ) => {
                             <h3> {product.name} </h3>
                             <p> ${product.price} </p>
                             
-                            <Link to={`/product/${product.type}/${product.id}`}> <button className="item_button"> Learn More </button> </Link>
+                            <Link to={`/product/${product.type}/${product.id}`}> <button className="item_button button_product_page"> Learn More </button> </Link>
                             
                         </div> 
                     
@@ -84,7 +84,7 @@ const Item_List = ( { products, filterVariable, filterType } ) => {
                             <img src={product.mini_image} />
                             <h3> {product.name} </h3>
                             <p> ${product.price} </p>
-                            <Link to={`/product/${product.type}/${product.id}`}> <button className="item_button"> Learn More </button> </Link> 
+                            <Link to={`/product/${product.type}/${product.id}`}> <button className="item_button button_product_page"> Learn More </button> </Link> 
                             
                         </div> 
                     

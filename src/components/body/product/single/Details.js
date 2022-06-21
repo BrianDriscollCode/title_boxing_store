@@ -1,8 +1,17 @@
-import React from "react"
+import React, { useState } from "react"
 
 //Parent single/Item_Page.js
 
 const Details = ( { product, addToCart } ) => {
+
+    const [productBought, setProductBought] = useState(false)
+
+    const buyProduct = (productBought) => {
+
+        addToCart(productBought)
+        setProductBought(true)
+
+    }
 
     return (
 
@@ -24,11 +33,26 @@ const Details = ( { product, addToCart } ) => {
             }
             </ul>
 
-            <button 
-                className="item_button"    
-                id="item_button_details_page"
-                onClick={() => addToCart(product[0])}
-            > Add to Cart </button>
+            <div id="add_cart_div">
+                <button 
+                    className="item_button"    
+                    id="item_button_details_page"
+                    onClick={() => buyProduct(product[0])}
+                > 
+                    Add to Cart 
+                </button>
+
+                {
+                    productBought ? 
+                        <div className="alert_text" id="added_to_cart"> Added to cart! </div>:
+                        null
+
+                }
+
+                
+            </div>
+
+            
             
 
         </div>

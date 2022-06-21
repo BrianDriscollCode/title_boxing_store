@@ -35,7 +35,7 @@
 #heroTag {
 
     position: absolute;
-    bottom: 33%;
+    bottom: 35%;
     left: 50px;
     color: white;
     text-align: left;
@@ -56,6 +56,75 @@
 
     font-size: 18px;
 
+}
+
+.slider_home {
+    opacity: 0;
+    padding: 0;
+    margin: 0;
+    transition: all 0.5s ease-in;
+}
+
+.slider_home.inactive {
+    display: none;
+    transition: all 0.5s ease-in;
+}
+
+.slider_home.active {
+    height: 100%; 
+    width: 100%; 
+    object-fit: contain;
+    opacity: 1;
+    display: block;
+    transition: all 0.5s ease-in;
+    animation: moveIn 1.5s;
+
+}
+
+@keyframes moveIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+
+}
+
+#chooser1 {
+
+    border: 1px solid rgb(194, 194, 194);
+    width: 10px;
+    height: 10px;
+    border-radius: 35px;
+    position: absolute;
+    bottom: 5%;
+    left: 52%;
+    padding: 20px;
+
+}
+
+#chooser2 {
+
+    border: 1px solid rgb(194, 194, 194);
+    width: 10px;
+    height: 10px;
+    border-radius: 45px;
+    position: absolute;
+    bottom: 5%;
+    left: 48%;
+    padding: 20px;
+
+}
+
+.chooser.active {
+    background-color: rgb(194, 194, 194);
+    transition: all 0.5s ease-in;
+}
+
+.chooser.inactive {
+    background-color: none;
+    transition: all 0.5s ease-in;
 }
 
 /* Reel */ 

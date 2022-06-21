@@ -39,7 +39,8 @@ const Category = ( { changeCategoryVariable, options, productSetter } ) => {
                                     //with new filter settings via a function in Page.js
                                     //Function passed: Page.js -> Shopping_options.js -> Brand.js
                                     onClick={(e) => changeCategoryVariable(e.target.value, 'category')}
-                                    onChange={() => setOnChangeCheckBox(text)}  
+                                    onChange={() => setOnChangeCheckBox(text)} 
+                                    className="input_shopping_options" 
                                 /> 
                                 <label> {text.replace(/[^a-zA-Z]/g, " ")} </label>
                             </div>

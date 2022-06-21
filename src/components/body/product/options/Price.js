@@ -33,6 +33,7 @@ const Price = ( { changeCategoryVariable } ) => {
                     //Function passed: Page.js -> Shopping_options.js -> Brand.js
                     onClick={(e) => changeCategoryVariable(e.target.value.split(','), 'price')}
                     onChange={() => setOnChangeCheckBox('one')}
+                    className="input_shopping_options"
                 /> 
                 <label> {price1} </label>
             </div>
@@ -46,6 +47,7 @@ const Price = ( { changeCategoryVariable } ) => {
                     //Function passed: Page.js -> Shopping_options.js -> Brand.js
                     onClick={(e) => changeCategoryVariable(e.target.value.split(','), 'price')}
                     onChange={() => setOnChangeCheckBox('two')}
+                    className="input_shopping_options"
                 /> 
                 <label> {price2} </label>
             </div>
@@ -59,6 +61,7 @@ const Price = ( { changeCategoryVariable } ) => {
                     //Function passed: Page.js -> Shopping_options.js -> Brand.js
                     onClick={(e) => changeCategoryVariable(e.target.value.split(','), 'price')}
                     onChange={() => setOnChangeCheckBox('three')}
+                    className="input_shopping_options"
                 /> 
                 <label> {price3} </label>
             </div>
@@ -72,6 +75,7 @@ const Price = ( { changeCategoryVariable } ) => {
                     //Function passed: Page.js -> Shopping_options.js -> Brand.js 
                     onClick={(e) => changeCategoryVariable(e.target.value.split(','), 'price')}
                     onChange={() => setOnChangeCheckBox('four')}
+                    className="input_shopping_options"
                 /> 
                 <label> {price4} </label>
             </div>
@@ -85,6 +89,7 @@ const Price = ( { changeCategoryVariable } ) => {
                     //Function passed: Page.js -> Shopping_options.js -> Brand.js
                     onClick={(e) => changeCategoryVariable(e.target.value.split(','), 'price')}
                     onChange={() => setOnChangeCheckBox('five')}
+                    className="input_shopping_options"
                 /> 
                 <label> {price5} </label>
             </div>

@@ -40,6 +40,7 @@ const Brand = ( {changeCategoryVariable, options, productSetter} ) => {
                                     //Function passed: Page.js -> Shopping_options.js -> Brand.js
                                     onClick={(e) => changeCategoryVariable(e.target.value, 'brand')} 
                                     onChange={() => setOnChangeCheckBox(text)}  
+                                    className="input_shopping_options"
                                 /> 
                                 <label> {text.replace(/[^a-zA-Z]/g, " ")} </label>
                             </div>

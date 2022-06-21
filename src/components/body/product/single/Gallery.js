@@ -49,11 +49,12 @@ const Item_Gallery = ( { images } ) => {
                                 
                                 index === current ? 
 
-                                <AnimationOnScroll animateIn="animate__fadeIn">    
+                                 
                                     <img    src={image} 
                                             className={index === current ? 'slide active' : 'slide'}
                                             key={index} 
-                                    /> </AnimationOnScroll>: null
+                                    /> 
+                                : null
                                 
                                 
                             )

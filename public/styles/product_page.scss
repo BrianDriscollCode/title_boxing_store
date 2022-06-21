@@ -126,9 +126,6 @@ $inner_container_size: 70%;
 
 }
 
-
-
-
 //********* Item List *********//
 
 //styling found on page.js
@@ -157,6 +154,19 @@ $inner_container_size: 70%;
 
 }
 
+#add_cart_div {
+
+    display: flex;
+    flex-direction: row;
+
+}
+
+#added_to_cart {
+
+    margin-top: 42px;
+    margin-left: 15px;
+}
+
 .item_button {
 
     background: linear-gradient(180deg, rgba(198,28,52,1) 14%, rgba(226,26,54,1) 52%, rgba(226,26,54,1) 83%, rgba(226,26,54,1) 92%, rgba(226,26,54,1) 100%);
@@ -174,3 +184,26 @@ $inner_container_size: 70%;
 
 }
 
+.item_button.button_product_page {
+
+    opacity: 0;
+
+}
+
+.single_item:hover .item_button.button_product_page {
+
+
+    animation: hoverButton 0.5s;
+    opacity: 1;
+
+}
+
+@keyframes hoverButton {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+
+}
