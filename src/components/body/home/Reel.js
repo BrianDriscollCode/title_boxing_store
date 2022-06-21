@@ -1,11 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom"
+import { AnimationOnScroll } from "react-animation-on-scroll"
 
 const Home_Reel = ( { products } ) => {
 
     return (
 
-        <div id="home_reel"> 
+        
+        <AnimationOnScroll animateIn="animate__fadeIn"><div id="home_reel"> 
 
             {
 
@@ -27,7 +29,7 @@ const Home_Reel = ( { products } ) => {
 
             }
 
-        </div> 
+        </div> </AnimationOnScroll>
 
     )
 

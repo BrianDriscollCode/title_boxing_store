@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { connect } from "react-redux"
 import { chooseProduct } from "../../../actions/index";
 import { useParams } from "react-router-dom"
+import { AnimationOnScroll } from "react-animation-on-scroll"
 
 import Product_Banner from "./Product_Banner";
 import Item_List from "./Item_List";
@@ -45,6 +46,7 @@ const Product_Page = ( { products, productSetter } ) => {
     return (
         
         <div>
+            <AnimationOnScroll animateIn="animate__fadeIn">
             <div id="product_div">
                 
                 <Product_Banner productSetter={productSetter} />
@@ -68,7 +70,7 @@ const Product_Page = ( { products, productSetter } ) => {
                 </div>
 
             </div>
-
+            </AnimationOnScroll>
         </div>
         
 

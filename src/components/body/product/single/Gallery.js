@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { ChevronCompactLeft } from "react-bootstrap-icons";
 import { FaRegArrowAltCircleLeft, FaRegArrowAltCircleRight } from "react-icons/fa"
+import { AnimationOnScroll } from "react-animation-on-scroll"
 
 //Parent single/Item_Page.js
 
@@ -47,10 +48,12 @@ const Item_Gallery = ( { images } ) => {
                             images[0].map((image, index) => 
                                 
                                 index === current ? 
+
+                                <AnimationOnScroll animateIn="animate__fadeIn">    
                                     <img    src={image} 
                                             className={index === current ? 'slide active' : 'slide'}
                                             key={index} 
-                                    /> : null
+                                    /> </AnimationOnScroll>: null
                                 
                                 
                             )

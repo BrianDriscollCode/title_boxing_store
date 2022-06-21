@@ -1,6 +1,7 @@
 import React from "react";
 import Home_Banner from "./Banner";
 import Home_Reel from "./Reel";
+import Category_Images from "./Category_images";
 import { connect } from "react-redux" 
 
 const Home_Page = ( { products } ) => {
@@ -17,6 +18,9 @@ const Home_Page = ( { products } ) => {
                 
                 <Home_Banner />
                 <Home_Reel products={products} />
+
+                <Category_Images />
+
 
             </div>
 
