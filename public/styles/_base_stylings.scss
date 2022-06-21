@@ -9,3 +9,10 @@ $secondary_color: #3a3a3a;
     
     
 }
+@mixin div-same-size-as-background-img($givenWidth, $givenHeight) {   
+    background-size: contain;     
+    background-repeat: no-repeat;     
+    width: 100%;          
+    padding-top: 343px; 
+
+}

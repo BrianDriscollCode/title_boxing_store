@@ -1,3 +1,5 @@
+@import "_base_stylings.scss";
+
 .page_div {
 
     display: flex;
@@ -83,5 +85,102 @@
     width: 100%;
 
 }
+
+/* Category Images */ 
+
+#category_images_wrapper {
+
+    width: 75%;
+
+}
+
+#Category_Images_Page {
+
+    height: 100%; 
+
+}
+
+#middle_category_container {
+
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+
+}
+
+#category_images_container {
+
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+}
+
+/*VERTICAL*/      /*HORIZONTAL*/
+
+/* | i |  | i |   ---------    */
+/* | m |  | m |    image       */
+/* | a |  | a |   ---------    */
+/* | g |  | g |   ---------    */
+/* | e |  | e |    image       */
+/*                ---------    */
+
+
+/****VERTICAL category of middle ****/
+
+#vertical_category_wrapper {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100%;
+    width: 50%;
+
+}
+
+#category_headgear {
+    background-color: aquamarine;
+    @include div-same-size-as-background-img(300,600);
+    width: 100%;
+    margin-right: 10px;
+    
+   
+}
+
+#category_heavy_bag {
+
+    @include div-same-size-as-background-img(300,600);
+    width: 100%;
+    margin-right: 5px;
+
+}
+
+/****HORIZONTAL category of middle ****/
+
+#headgear_heavy_bag_container {
+
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-left: 5px;
+        
+}
+
+#category_apparel {
+
+    @include div-same-size-as-background-img(640, 320);
+    margin-bottom: 10px
+
+}
+
+#category_corner {
+
+    @include div-same-size-as-background-img(640, 320);
+
+}
+
 
 

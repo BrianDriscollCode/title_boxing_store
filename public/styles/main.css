@@ -80,6 +80,111 @@
   width: 100%;
 }
 
+/* Category Images */
+#category_images_wrapper {
+  width: 75%;
+}
+
+#Category_Images_Page {
+  height: 100%;
+}
+
+#middle_category_container {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#category_images_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+/*VERTICAL*/
+/*HORIZONTAL*/
+/* | i |  | i |   ---------    */
+/* | m |  | m |    image       */
+/* | a |  | a |   ---------    */
+/* | g |  | g |   ---------    */
+/* | e |  | e |    image       */
+/*                ---------    */
+/****VERTICAL category of middle ****/
+#vertical_category_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
+  width: 50%;
+}
+
+#category_headgear {
+  background-color: aquamarine;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  padding-top: 343px;
+  width: 100%;
+  margin-right: 10px;
+}
+
+#category_heavy_bag {
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  padding-top: 343px;
+  width: 100%;
+  margin-right: 5px;
+}
+
+/****HORIZONTAL category of middle ****/
+#headgear_heavy_bag_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50%;
+  margin-left: 5px;
+}
+
+#category_apparel {
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  padding-top: 343px;
+  margin-bottom: 10px;
+}
+
+#category_corner {
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  padding-top: 343px;
+}
+
 #product_div {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -94,7 +199,7 @@
 }
 
 #image_banner {
-  width: 70%;
+  width: 75%;
   height: 300px;
   margin-top: 22px;
   background-size: 1280px 333px;
@@ -123,7 +228,7 @@
 }
 
 #product_content {
-  width: 70%;
+  width: 75%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -282,7 +387,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 65%;
+  width: 75%;
   -ms-flex-item-align: center;
       align-self: center;
 }
@@ -375,7 +480,7 @@
 }
 
 #navigation_wrapper {
-  width: 65%;
+  width: 75%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
