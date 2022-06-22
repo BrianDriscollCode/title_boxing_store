@@ -141,8 +141,8 @@ $inner_container_size: 70%;
 
 #item_list_wrapper {
 
-        @include flex_direction_align_justify(row, center, center);
-        flex-wrap: wrap;
+    @include flex_direction_align_justify(row, center, center);
+    flex-wrap: wrap;
     
 }
 

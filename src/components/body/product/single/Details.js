@@ -24,9 +24,9 @@ const Details = ( { product, addToCart } ) => {
             
             {
                 
-                product[0].details.map(product => 
+                product[0].details.map((product, index) => 
                     
-                    <li className="single_item_list_li"> {product} </li>
+                    <li className="single_item_list_li" key={index + 'single_item_detail'}> {product} </li>
                     
                 )
 

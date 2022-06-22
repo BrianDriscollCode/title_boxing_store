@@ -11,9 +11,9 @@ const Home_Reel = ( { products } ) => {
 
             {
 
-                products.slice(0,6).map(product =>
+                products.slice(0,6).map((product, index) =>
                     
-                        <div className="reel_images">
+                        <div className="reel_images" key={product.type + index}>
                             <Link 
                             to={`/product/${product.type}/${product.id}`} 
                             >

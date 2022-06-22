@@ -28,9 +28,9 @@ const Category = ( { changeCategoryVariable, options, productSetter } ) => {
             )
             .map(category => (
 
-                       category.categories.map(text => 
+                       category.categories.map((text, index) => 
                         
-                        <div className="shopping_options_single_input"> 
+                        <div className="shopping_options_single_input" key={text + index}> 
                                 <input 
                                     type="checkbox" 
                                     checked={checkedBox == text}

@@ -21,9 +21,9 @@ const Item_List = ( { products, filterVariable, filterType } ) => {
             {
             filterType === '' ?
               
-                products.map(product => 
+                products.map((product, index) => 
                 
-                        <div className="single_item">
+                        <div className="single_item" key={product.name + index}>
                             <img src={product.mini_image} />
                             <h3> {product.name} </h3>
                             <p> ${product.price} </p>
@@ -39,9 +39,9 @@ const Item_List = ( { products, filterVariable, filterType } ) => {
             filterType === 'category' ?
               
                 products.filter(product => product.category.includes(filterVariable))
-                    .map(product => 
+                    .map((product, index) => 
                 
-                        <div className="single_item">
+                        <div className="single_item" key={product.name + index}>
                             <img src={product.mini_image} />
                             <h3> {product.name} </h3>
                             <p> ${product.price} </p>
@@ -59,9 +59,9 @@ const Item_List = ( { products, filterVariable, filterType } ) => {
                 products.filter(product => 
                         product.price >= filterVariable[0] &&
                         product.price <= filterVariable[1])
-                    .map(product => 
+                    .map((product, index) => 
                 
-                        <div className="single_item">
+                        <div className="single_item" key={product.name + index}>
                             <img src={product.mini_image} />
                             <h3> {product.name} </h3>
                             <p> ${product.price} </p>
@@ -78,9 +78,9 @@ const Item_List = ( { products, filterVariable, filterType } ) => {
             filterType === 'brand' ?
               
                 products.filter(product => product.brand.includes(filterVariable))
-                    .map(product => 
+                    .map((product, index) => 
                 
-                        <div className="single_item">
+                        <div className="single_item" key={product.name + index}>
                             <img src={product.mini_image} />
                             <h3> {product.name} </h3>
                             <p> ${product.price} </p>

@@ -23,21 +23,18 @@ const Page_Header = ( { cartAmount } ) => {
                 <div id="functionality_header_container">
 
                     <div id="functionality_header_items">
-
+                        <div>
+                            <PersonFill />
+                            <Link to="/login" className="signIn"> Sign In </Link> 
+                        </div>
                         
-                        <div className="non-visible"> Empty </div>
-                        <div className="non-visible"> | </div>
-                        <PersonFill />
-                        <Link to="/login"> Sign In </Link> 
-                        <div> | </div>
-                        <Cart className="cart" />
-                        <Link to="/cart" className="cart"> Cart ({cartAmount}) </Link>
+                        <div className="spacer"> | </div>
+                        
+                        <div>
+                            <Cart className="cart" />
+                            <Link to="/cart" className="cart"> Cart ({cartAmount}) </Link>
+                        </div>
 
-                    </div>
-
-                    <div id="search_container">
-                        <input id="item_search" /> 
-                        <button className="search_button"> <Search /> </button> 
                     </div>
 
                 </div>

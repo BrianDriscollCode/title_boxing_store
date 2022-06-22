@@ -57,9 +57,10 @@ const App = ( { products } ) => {
                         
                         {
 
-                        products.map(product => (                             
+                        products.map((product, index) => (                             
                                 
-                            <Route path={`/product/${product.type}/${product.id}`} 
+                            <Route path={`/product/${product.type}/${product.id}` } 
+                                key={product.type + index}
                                 render={() => (
 
 

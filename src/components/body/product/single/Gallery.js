@@ -52,7 +52,7 @@ const Item_Gallery = ( { images } ) => {
                                  
                                     <img    src={image} 
                                             className={index === current ? 'slide active' : 'slide'}
-                                            key={index} 
+                                            key={index + "image_gallery"} 
                                     /> 
                                 : null
                                 
@@ -76,12 +76,11 @@ const Item_Gallery = ( { images } ) => {
 
                     images[0].map((image, index) => 
                     
-                    <div className="image_picker_containers">
+                    <div className="image_picker_containers" key={index + 'image_picker'}>
 
                         <img 
                             src={image} 
                             className={index === current ? 'selected image_picker_items' : 'unselected image_picker_items'}
-                            key={index}
                             onClick={() => setImageOnPicker(index)}
                         />
 

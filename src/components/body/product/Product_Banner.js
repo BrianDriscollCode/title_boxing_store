@@ -10,9 +10,12 @@ const Product_Banner = ( { banners, productSetter } ) => {
     return (
 
         banners.filter(banner => banner.type == productSetter)
-            .map(banner => 
+            .map((banner, index) => 
 
-                <div id="image_banner" style={ {backgroundImage: `url(${banner.image_link})`} }> 
+                <div 
+                    id="image_banner" 
+                    style={ {backgroundImage: `url(${banner.image_link})`} } 
+                    key={banner.title + index}> 
 
                     <div id="banner_text_area">
 

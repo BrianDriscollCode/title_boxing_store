@@ -121,3 +121,57 @@
     font-weight: 600;
 
 }
+
+/* Media Queries */ 
+
+@media only screen and (max-width: 770px) {
+
+    #navigation_container {
+        height: auto;
+    }
+
+    #navigation_wrapper {
+        height: auto;
+        width: 100%;
+    }
+
+    #navigation_list {
+        height: auto;
+    }
+
+    #navigation_list {
+
+        flex-direction: column;
+        z-index: 11;
+
+    }
+
+    #menu_item_1 {
+
+        border: 1px solid #666;    
+    }
+    
+    #menu_item_2 {
+    
+        border: 1px solid #666;
+    
+    }
+    
+    #menu_item_3 {
+    
+        border: 1px solid #666;
+    
+    }
+    
+    #menu_item_4 {
+    
+        border: 1px solid #666;
+    
+    }
+    
+    #shipping_info {
+
+        width: 100%;
+    }
+
+}

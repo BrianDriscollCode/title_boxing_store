@@ -41,7 +41,11 @@ const Cart_Page = ( { accounts, currentAccount } ) => {
 
             <div id="cart_page_container">
 
-                <Shopping_Cart cart_items={currentCart} />
+                <Shopping_Cart 
+                    cart_items={currentCart} 
+                    currentAccount={currentAccount}
+                    accounts={accounts}
+                />
                 <Shopping_Summary cart_items={currentCart} />
                 
             </div>
