@@ -143,6 +143,7 @@ $inner_container_size: 70%;
 
     @include flex_direction_align_justify(row, center, center);
     flex-wrap: wrap;
+    margin-bottom: 75px;
     
 }
 
@@ -264,6 +265,7 @@ $inner_container_size: 70%;
 
     #image_banner {
 
+        margin-top: 0px;
         width: 100%;
 
     }

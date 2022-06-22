@@ -151,7 +151,7 @@
 }
 
 .reel_images {
-  padding: 10px 40px 10px 40px;
+  padding: 10px 60px 10px 60px;
   width: 16.6667%;
 }
 
@@ -172,7 +172,8 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-top: 55px;
+  margin-top: 75px;
+  margin-bottom: 75px;
 }
 
 #category_line {
@@ -505,6 +506,7 @@
           justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin-bottom: 75px;
 }
 
 .single_item {
@@ -627,6 +629,7 @@
 
 @media only screen and (max-width: 580px) {
   #image_banner {
+    margin-top: 0px;
     width: 100%;
   }
   #banner_content_wrapper {
@@ -1228,19 +1231,15 @@
 }
 
 @media only screen and (max-width: 690px) {
-  #image_gallery_single {
-    width: 300px;
-    height: 300px;
-  }
-}
-
-@media only screen and (max-width: 690px) {
   #outer_image_gallery_single {
-    width: 80%;
+    width: 90%;
   }
   #image_gallery_single {
     width: 100%;
     height: 100%;
+  }
+  #item_info_container {
+    width: 90% !important;
   }
 }
 
@@ -1257,6 +1256,7 @@
   margin-right: auto;
   width: 65%;
   padding-top: 20px;
+  margin-bottom: 75px;
 }
 
 #login_page_container hr {
@@ -1356,6 +1356,7 @@
   margin-left: auto;
   margin-right: auto;
   padding-top: 20px;
+  margin-bottom: 120px;
 }
 
 #create_form {
@@ -1435,6 +1436,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-bottom: 75px;
 }
 
 #cart_container {
@@ -1535,8 +1537,65 @@
   height: 200px;
 }
 
+#footer_page {
+  background-color: #3a3a3a;
+  color: white;
+  height: 300px;
+}
+
+#outer_footer_container {
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 0 auto 0 auto;
+}
+
+#footer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#footer a {
+  color: #bdbdbd;
+}
+
+#footer a:hover {
+  color: #ff6b6b;
+}
+
+#footer_container {
+  margin-top: 25px;
+}
+
+#footer_container h3 {
+  text-align: left;
+  text-decoration: underline;
+}
+
+#footer_link_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer_link {
+  margin-bottom: 15px;
+}
+
 body {
-  margin: 0;
+  margin: 0 0 0 0;
   color: #464646;
 }
 

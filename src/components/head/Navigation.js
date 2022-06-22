@@ -24,24 +24,24 @@ const Navigation = () => {
                     </li>
                     <li id="menu_item_3" className="navigation_list_item"> 
                     
-                        <Link to="/product/shoes"> Boxing Shoes </Link>
+                        <Link to="/product/shoes"> Shoes </Link>
                         
                     </li>
                     <li id="menu_item_4" className="navigation_list_item"> 
                     
-                    <Link to="/product/headgear"> Head Gear </Link>
+                        <Link to="/product/headgear"> Headgear </Link>
                         
                     </li> 
 
-                    <li id="menu_item_4" className="navigation_list_item"> 
+                    <li id="menu_item_5" className="navigation_list_item"> 
                     
-                    <Link to="/product/headgear"> Punching Bags </Link>
+                        <Link to="/product/headgear"> Punch Bags </Link>
                         
                     </li> 
 
-                    <li id="menu_item_4" className="navigation_list_item"> 
+                    <li id="menu_item_6" className="navigation_list_item"> 
                     
-                    <Link to="/product/headgear"> Trainer Gear </Link>
+                        <Link to="/product/headgear"> Trainer Gear </Link>
                         
                     </li> 
                 </ul>

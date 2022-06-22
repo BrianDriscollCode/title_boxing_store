@@ -139,6 +139,7 @@
           justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin-bottom: 75px;
 }
 
 .single_item {
@@ -261,6 +262,7 @@
 
 @media only screen and (max-width: 580px) {
   #image_banner {
+    margin-top: 0px;
     width: 100%;
   }
   #banner_content_wrapper {
