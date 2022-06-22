@@ -22,8 +22,8 @@ const Product_Banner = ( { banners, productSetter } ) => {
                         <div id="banner_content_wrapper">
                             <h3> {banner.title}</h3>
 
-                            <span id="message"> {banner.description}
-                            </span>
+                            <p id="message"> {banner.description}
+                            </p>
 
                         </div>
         

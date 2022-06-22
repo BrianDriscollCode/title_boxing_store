@@ -32,6 +32,18 @@ const Navigation = () => {
                     <Link to="/product/headgear"> Head Gear </Link>
                         
                     </li> 
+
+                    <li id="menu_item_4" className="navigation_list_item"> 
+                    
+                    <Link to="/product/headgear"> Punching Bags </Link>
+                        
+                    </li> 
+
+                    <li id="menu_item_4" className="navigation_list_item"> 
+                    
+                    <Link to="/product/headgear"> Trainer Gear </Link>
+                        
+                    </li> 
                 </ul>
 
 
