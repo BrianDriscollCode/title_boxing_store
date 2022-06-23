@@ -47,7 +47,7 @@ const Category_Images = () => {
                     style={{backgroundImage: `url(assets/home/punching_bag_home.jpg)` }}
                 >
 
-                    <div className="centered_text"> PUNCHING BAGS </div>
+                    <div className="centered_text"> <s>PUNCHING BAGS</s> </div>
 
                 </div></AnimationOnScroll>
 
@@ -58,7 +58,7 @@ const Category_Images = () => {
                 >
 
                     <div className="centered_text"> 
-                            COACH {'&'} TRAINER 
+                            <s> COACH {'&'} TRAINER </s>
                     </div>
 
                 </div></AnimationOnScroll>

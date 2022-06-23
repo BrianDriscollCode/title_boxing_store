@@ -31,8 +31,6 @@ const Cart_Page = ( { accounts, currentAccount } ) => {
         setCurrentCart(pageAccount[0]?.cart)
     })
 
-    console.log(currentAccount)
-
     return (
         
 

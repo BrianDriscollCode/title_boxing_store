@@ -35,13 +35,13 @@ const Navigation = () => {
 
                     <li id="menu_item_5" className="navigation_list_item"> 
                     
-                        <Link to="/product/headgear"> Punch Bags </Link>
+                        <Link> <s>Punch Bags</s> </Link>
                         
                     </li> 
 
                     <li id="menu_item_6" className="navigation_list_item"> 
                     
-                        <Link to="/product/headgear"> Trainer Gear </Link>
+                        <Link> <s>Trainer Gear</s> </Link>
                         
                     </li> 
                 </ul>

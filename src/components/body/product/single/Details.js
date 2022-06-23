@@ -1,4 +1,5 @@
 import React, { useState } from "react"
+import { v4 as uuidv4 } from "uuid"
 
 //Parent single/Item_Page.js
 
@@ -7,8 +8,11 @@ const Details = ( { product, addToCart } ) => {
     const [productBought, setProductBought] = useState(false)
 
     const buyProduct = (productBought) => {
+    
+        //add uniqueId to product
+        let productWithUniqueID = {...productBought, uniqueId: uuidv4()}
 
-        addToCart(productBought)
+        addToCart(productWithUniqueID) //function in single/Item_Page.js
         setProductBought(true)
 
     }

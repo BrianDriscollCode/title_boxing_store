@@ -1,13 +1,14 @@
 import React, { useEffect } from "react";
+import { connect } from "react-redux" 
+import { accountActions } from "../../../actions";
 
-const Shopping_Cart = ( { cart_items, currentAccount, accounts } ) => {
+const Shopping_Cart = ( { cart_items, currentAccount, accounts, accountActions } ) => {
 
-    const remove_item = (index) => {
+    const remove_item = (index, e) => {
 
-        console.log(cart_items, ' -cart_items')
-        console.log(accounts, ' -accounts')
-        console.log(currentAccount, ' -currentAccount')
-        console.log(index)
+        //Send for item removal from car in Accounts_Reducer.js
+        //Uses the uniqueId to target cart item
+        accountActions("REMOVE_ITEM", {username: currentAccount[0].username, uniqueId: e.target.value})
 
     }
 
@@ -36,7 +37,8 @@ const Shopping_Cart = ( { cart_items, currentAccount, accounts } ) => {
                 <div className="right_cart_section">
                     <button 
                         className="item_button"
-                        onClick={() => remove_item(index)}
+                        value={item.uniqueId}
+                        onClick={(e) => remove_item(index, e)}
                     > Remove Item </button>
                 </div>
 
@@ -54,5 +56,11 @@ const Shopping_Cart = ( { cart_items, currentAccount, accounts } ) => {
 
 }
 
+const mapStateToProps = (state) => {
 
-export default (Shopping_Cart)
+    return {}
+
+}
+
+
+export default connect(mapStateToProps, { accountActions })(Shopping_Cart)

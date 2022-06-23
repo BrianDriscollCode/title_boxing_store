@@ -26,7 +26,7 @@ const Shopping_Summary = ( { cart_items } ) => {
             <h3> Shopping Summary </h3>
             <p> Total Price: ${calculatePrice()[0].toFixed(2)} </p>
             <p> Total Items: {calculatePrice()[1]} </p>
-            <button className="item_button"> Checkout </button>
+            <button className="item_button"> <s>Checkout</s> </button>
 
         </div>
 
