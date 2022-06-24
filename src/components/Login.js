@@ -25,7 +25,7 @@ const Login = ( { accounts, accountActions, currentAccount } ) => {
         )
 
         //check for matching accounts then set current account or error status
-        if (currentAccountFilter[0]?.username == username && 
+        if (currentAccountFilter[0]?.username.toLowerCase() == username.toLowerCase() && 
             currentAccountFilter[0]?.password == password) {
 
             console.log("success")
