@@ -1,0 +1,146 @@
+/* checkout page stylings */ 
+
+#checkout_div_container {
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#announce {
+
+    align-self: center;
+    font-size: 60px;
+
+}
+
+#checkout_div_wrapper {
+
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    justify-content: center;
+    align-self: center;
+
+}
+
+.checkout_title_sections {
+
+    display: flex;
+    flex-direction: row;
+    background-color: #3a3a3a;
+    color: white;
+    align-items: center;
+
+}
+
+.checkout_title_numbers {
+
+    background-color: #e11936;
+    height: 35px;
+    width: 35px;
+    margin: 20px;
+    border-radius: 50%;
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 600;
+    color:white;
+
+}
+
+/* shipping address section */
+
+/* container */
+#shipping_address_container {
+
+    background-color: aqua;
+    width: 33%;
+    margin: 10px
+
+}
+
+#shipping_address_names {
+
+    display: flex;
+    flex-direction: row;
+
+}
+
+.input_wrapper {
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+td, th {
+
+    text-align: left;
+}
+
+/*payment section */
+
+/* container */
+#payment_section {
+
+    background-color: palegreen;
+    margin: 10px
+
+}
+
+#credit_card_section_input {
+
+    display: flex;
+    flex-direction: row;
+
+}
+
+#date_and_cvv {
+
+    display: flex;
+    flex-direction: row;
+
+}
+
+/* shipping methods section */
+
+/* container */
+#shipping_methods_section {
+
+    background-color: bisque;
+    margin: 10px
+
+}
+
+/* order summary section */ 
+
+/* container */
+#order_summary_section {
+
+    background-color: rgb(146, 197, 255);
+    width: 33%;
+    margin: 10px
+
+}
+
+.order_summary_item {
+
+    display: flex;
+    flex-direction: row;
+
+}
+
+.order_summary_info_item {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+
+
+

@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "react-router-dom"
 
 
 const Shopping_Summary = ( { cart_items } ) => {
@@ -26,7 +27,7 @@ const Shopping_Summary = ( { cart_items } ) => {
             <h3> Shopping Summary </h3>
             <p> Total Price: ${calculatePrice()[0].toFixed(2)} </p>
             <p> Total Items: {calculatePrice()[1]} </p>
-            <button className="item_button"> <s>Checkout</s> </button>
+            <Link to="/checkout"><button className="item_button"> <s>Checkout</s> </button></Link>
 
         </div>
 
