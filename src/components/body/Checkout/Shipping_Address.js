@@ -21,14 +21,14 @@ const ShippingAddress = () => {
 
                 <div id="shipping_address_names">
 
-                    <div className="input_wrapper" id="first_name_1">
+                    <div className="input_wrapper">
                         <label> First Name </label>
-                        <input className="input_sizes" />
+                        <input className="input_sizes" id="first_name_1" />
                     </div>
                     
-                    <div className="input_wrapper" id="last_name_1">
+                    <div className="input_wrapper">
                         <label> Last Name </label>
-                        <input className="input_sizes" />
+                        <input className="input_sizes" id="last_name_1" />
                     </div>
                     
                 </div>

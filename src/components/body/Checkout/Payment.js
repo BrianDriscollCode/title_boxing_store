@@ -8,42 +8,32 @@ const Payment = () => {
 
             <div className="checkout_title_sections">
                <div className="checkout_title_numbers"> 3 </div> 
-               <h2> Shipping Method </h2>
+               <h2> Payment Info </h2>
             </div>
 
             <form id="credit_card_form">
 
-                <div id="credit_card_section_input"> 
-                    <input type="radio" />
-                    <div id="payment_cards">
-                        <img src="#" />
-                        <img src="#" />
-                        <img src="#" />
-                        <img src="#" />
-                    </div>
-                </div>
-
-                <div id="input_wrapper">
+                <div className="input_wrapper">
                     <label> Card number </label>
-                    <input />
+                    <input className="input_sizes" />
                 </div>
 
                 <div id="date_and_cvv">
-                    <div id="input_wrapper">
+                    <div className="input_wrapper">
                         <label> Expiry date </label>
-                        <input />
+                        <input className="input_sizes" id="expiry_date"/>
                     </div>
 
-                    <div id="input_wrapper">
+                    <div className="input_wrapper">
                         <label> CVC/CVV </label>
-                        <input />
+                        <input className="input_sizes" id="CVV"/>
                     </div>
 
                 </div>
 
-                <div id="input_wrapper">
+                <div className="input_wrapper">
                     <label> Name on card </label>
-                    <input />
+                    <input className="input_sizes" />
                 </div>
 
             </form>

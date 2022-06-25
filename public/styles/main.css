@@ -1601,6 +1601,10 @@
 }
 
 /* checkout page stylings */
+#middle_row_checkout {
+  width: 33%;
+}
+
 .input_sizes {
   height: 40px;
   border: 1px solid #b3b3b3;
@@ -1618,6 +1622,7 @@
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: #e5e5e5;
+  padding-bottom: 75px;
 }
 
 #announce {
@@ -1685,6 +1690,9 @@
   background-color: white;
   width: 33%;
   margin: 10px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 #shipping_address_form {
@@ -1718,7 +1726,7 @@
 }
 
 #last_name_1, #first_name_1 {
-  width: 50%;
+  width: 100%;
 }
 
 #shipping_method_container {
@@ -1748,9 +1756,26 @@
 }
 
 /*payment section */
+#credit_card_form {
+  margin-bottom: 10px;
+}
+
+#date_and_cvv {
+  width: 100%;
+}
+
+#expiry_date {
+  width: 100%;
+}
+
+#CVV {
+  width: 100%;
+}
+
 /* container */
 #payment_section {
   background-color: white;
+  padding-bottom: 10px;
   margin: 10px;
 }
 
@@ -1782,11 +1807,26 @@
 }
 
 /* order summary section */
+#amount_of_items {
+  margin-left: 30px;
+}
+
+#order_summary_item_list hr {
+  width: 90%;
+}
+
+#order_summary_item_list {
+  margin: 10px;
+}
+
 /* container */
 #order_summary_section {
   background-color: white;
   width: 33%;
   margin: 10px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 .order_summary_item {
@@ -1797,6 +1837,9 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .order_summary_info_item {
@@ -1810,6 +1853,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin: 10px;
 }
 
 body {
