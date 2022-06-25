@@ -1,10 +1,20 @@
 /* checkout page stylings */ 
 
+.input_sizes {
+
+    height: 40px;
+    border: 1px solid rgb(179, 179, 179);
+
+}
+
+
+
 #checkout_div_container {
 
     display: flex;
     justify-content: center;
     flex-direction: column;
+    background-color: #e5e5e5;
 }
 
 #announce {
@@ -18,7 +28,7 @@
 
     display: flex;
     flex-direction: row;
-    width: 90%;
+    width: 70%;
     justify-content: center;
     align-self: center;
 
@@ -56,9 +66,21 @@
 /* container */
 #shipping_address_container {
 
-    background-color: aqua;
+    background-color: rgb(255, 255, 255);
     width: 33%;
     margin: 10px
+
+}
+
+#shipping_address_form {
+
+    margin-top: 30px;
+
+}
+
+.input_wrapper label {
+
+    margin-bottom: 5px;
 
 }
 
@@ -66,6 +88,7 @@
 
     display: flex;
     flex-direction: row;
+    width: 100%;
 
 }
 
@@ -73,12 +96,46 @@
 
     display: flex;
     flex-direction: column;
+    margin: 10px;
+}
+
+#last_name_1, #first_name_1 {
+
+    width: 50%;
 
 }
 
-td, th {
+#shipping_method_container {
 
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    padding-bottom: 20px;
+
+
+}
+
+
+#shipping_method_options {
+
+    border-collapse: collapse;
+
+}
+
+.table_row_shipping {
+
+    display: table-row;
     text-align: left;
+    border: 1px solid rgb(211, 211, 211);
+
+
+}
+
+.table_row_shipping div {
+
+    padding: 20px;
+    display: table-cell;
+
 }
 
 /*payment section */
@@ -86,7 +143,7 @@ td, th {
 /* container */
 #payment_section {
 
-    background-color: palegreen;
+    background-color: rgb(255, 255, 255);
     margin: 10px
 
 }
@@ -110,7 +167,7 @@ td, th {
 /* container */
 #shipping_methods_section {
 
-    background-color: bisque;
+    background-color: rgb(255, 255, 255);
     margin: 10px
 
 }
@@ -120,7 +177,7 @@ td, th {
 /* container */
 #order_summary_section {
 
-    background-color: rgb(146, 197, 255);
+    background-color: rgb(255, 255, 255);
     width: 33%;
     margin: 10px
 

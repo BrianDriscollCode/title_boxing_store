@@ -1,4 +1,9 @@
 /* checkout page stylings */
+.input_sizes {
+  height: 40px;
+  border: 1px solid #b3b3b3;
+}
+
 #checkout_div_container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -10,6 +15,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  background-color: #e5e5e5;
 }
 
 #announce {
@@ -27,7 +33,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  width: 90%;
+  width: 70%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -74,9 +80,17 @@
 /* shipping address section */
 /* container */
 #shipping_address_container {
-  background-color: aqua;
+  background-color: white;
   width: 33%;
   margin: 10px;
+}
+
+#shipping_address_form {
+  margin-top: 30px;
+}
+
+.input_wrapper label {
+  margin-bottom: 5px;
 }
 
 #shipping_address_names {
@@ -87,6 +101,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  width: 100%;
 }
 
 .input_wrapper {
@@ -97,16 +112,43 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin: 10px;
 }
 
-td, th {
+#last_name_1, #first_name_1 {
+  width: 50%;
+}
+
+#shipping_method_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 20px;
+  padding-bottom: 20px;
+}
+
+#shipping_method_options {
+  border-collapse: collapse;
+}
+
+.table_row_shipping {
+  display: table-row;
   text-align: left;
+  border: 1px solid lightgray;
+}
+
+.table_row_shipping div {
+  padding: 20px;
+  display: table-cell;
 }
 
 /*payment section */
 /* container */
 #payment_section {
-  background-color: palegreen;
+  background-color: white;
   margin: 10px;
 }
 
@@ -133,14 +175,14 @@ td, th {
 /* shipping methods section */
 /* container */
 #shipping_methods_section {
-  background-color: bisque;
+  background-color: white;
   margin: 10px;
 }
 
 /* order summary section */
 /* container */
 #order_summary_section {
-  background-color: #92c5ff;
+  background-color: white;
   width: 33%;
   margin: 10px;
 }

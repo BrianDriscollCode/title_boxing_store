@@ -12,8 +12,6 @@ const Checkout_Page = () => {
         
 
         <div id="checkout_div_container"> 
-
-            <h2 id="announce"> **PAGE BUILDING IN PROGRESS** </h2> 
         
             <div id="checkout_div_wrapper"> 
 

@@ -11,28 +11,27 @@ const ShippingMethods = () => {
                <h2> Shipping Method </h2>
             </div>
 
-            <div>
+            <div id="shipping_method_container">
 
-                <table>
-                    <tr>
-                        <th> <input type="radio" /> </th>
-                        <th> $8.00 </th>
-                        <th> Standard </th>
-                    </tr>
+                <div id="shipping_method_options">
+                    <div className="table_row_shipping">
+                        <div> <input type="radio" /> </div>
+                        <div> $8.00 </div>
+                        <div> Standard </div>
+                    </div>
 
-                    <tr>
-                        <th> <input type="radio" /> </th>
-                        <th> $96.95 </th>
-                        <th> 2-Day Air </th>
-                    </tr>
+                    <div className="table_row_shipping">
+                        <div> <input type="radio" /> </div>
+                        <div> $96.95 </div>
+                        <div> 2-Day Air </div>
+                    </div>
 
-                    <tr>
-                        <th> <input type="radio" /> </th>
-                        <th> $123.95 </th>
-                        <th> Next Day Air </th>
-                    </tr>
-                    
-                </table>
+                    <div className="table_row_shipping">
+                        <div> <input type="radio" /> </div>
+                        <div> $123.95 </div>
+                        <div> Next Day Air </div>
+                    </div>
+                </div>
 
 
 
