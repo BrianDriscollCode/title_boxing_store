@@ -15,25 +15,38 @@ const Payment = () => {
 
                 <div className="input_wrapper">
                     <label> Card number </label>
-                    <input className="input_sizes" />
+                    <input 
+                        className="input_sizes"
+                        value="4000 5086 1083 1851"
+                    />
                 </div>
 
                 <div id="date_and_cvv">
                     <div className="input_wrapper">
                         <label> Expiry date </label>
-                        <input className="input_sizes" id="expiry_date"/>
+                        <input 
+                            className="input_sizes" 
+                            id="expiry_date"
+                            value="2/23" />
                     </div>
 
                     <div className="input_wrapper">
                         <label> CVC/CVV </label>
-                        <input className="input_sizes" id="CVV"/>
+                        <input 
+                            className="input_sizes" 
+                            id="CVV"
+                            value="971"
+                        />
                     </div>
 
                 </div>
 
                 <div className="input_wrapper">
                     <label> Name on card </label>
-                    <input className="input_sizes" />
+                    <input 
+                        className="input_sizes" 
+                        value="Joe smith"
+                    />
                 </div>
 
             </form>

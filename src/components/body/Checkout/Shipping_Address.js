@@ -15,7 +15,10 @@ const ShippingAddress = () => {
 
                 <div className="input_wrapper">
                     <label> Email Address </label>
-                    <input className="input_sizes" />
+                    <input 
+                        className="input_sizes" 
+                        value="joe.smith@gmail.com"
+                    />
                 </div>
                 
 
@@ -23,24 +26,37 @@ const ShippingAddress = () => {
 
                     <div className="input_wrapper">
                         <label> First Name </label>
-                        <input className="input_sizes" id="first_name_1" />
+                        <input 
+                            className="input_sizes" 
+                            id="first_name_1" 
+                            value="Joe"
+                        />
                     </div>
                     
                     <div className="input_wrapper">
                         <label> Last Name </label>
-                        <input className="input_sizes" id="last_name_1" />
+                        <input 
+                            className="input_sizes" 
+                            id="last_name_1" 
+                            value="Smith" />
                     </div>
                     
                 </div>
 
                 <div className="input_wrapper">
                     <label> Street Address </label>
-                    <input className="input_sizes" />
+                    <input 
+                        className="input_sizes" 
+                        value="4297 E Cordle Dr"
+                    />
                 </div>
                 
                 <div className="input_wrapper">
                     <label> Phone Number </label>
-                    <input className="input_sizes" />
+                    <input 
+                        className="input_sizes" 
+                        value="589-384-8380"
+                    />
                 </div>
                 
                 

@@ -1,6 +1,17 @@
-import React from "react"
+import React, { useState } from "react"
 
-const ShippingMethods = () => {
+const ShippingMethods = ( { setShippingSummaryCost } ) => {
+
+    const [shippingCost, setShippingCost] = useState(8.00)
+
+    const setCost = (e) => {
+
+        setShippingCost(e.target.value)
+        setShippingSummaryCost(e.target.value)
+
+
+    }
+
 
     return (
 
@@ -15,19 +26,40 @@ const ShippingMethods = () => {
 
                 <div id="shipping_method_options">
                     <div className="table_row_shipping">
-                        <div> <input type="radio" /> </div>
+                        <div> 
+                            <input
+                                type="radio" 
+                                value={8.00}
+                                onClick={(e) => setCost(e)}
+                                checked={shippingCost == 8}
+                            /> 
+                        </div>
                         <div> $8.00 </div>
                         <div> Standard </div>
                     </div>
 
                     <div className="table_row_shipping">
-                        <div> <input type="radio" /> </div>
+                        <div> 
+                            <input
+                                type="radio" 
+                                value={96.95}
+                                onClick={(e) => setCost(e)}
+                                checked={shippingCost == 96.95}
+                            /> 
+                        </div>
                         <div> $96.95 </div>
                         <div> 2-Day Air </div>
                     </div>
 
                     <div className="table_row_shipping">
-                        <div> <input type="radio" /> </div>
+                        <div> 
+                            <input
+                                type="radio" 
+                                value={123.95}
+                                onClick={(e) => setCost(e)}
+                                checked={shippingCost == 123.95}
+                            /> 
+                        </div>
                         <div> $123.95 </div>
                         <div> Next Day Air </div>
                     </div>

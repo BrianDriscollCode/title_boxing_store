@@ -27,7 +27,7 @@
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  font-size: 60px;
+  font-size: 30px;
 }
 
 #checkout_div_wrapper {
@@ -215,9 +215,14 @@
 
 #order_summary_item_list {
   margin: 10px;
+  overflow: auto;
+  height: 220px;
 }
 
-/* container */
+#name_and_brand_summary {
+  width: 90%;
+}
+
 #order_summary_section {
   background-color: white;
   width: 33%;
@@ -252,5 +257,15 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: 10px;
+}
+
+#summary_button_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 10px;
 }
 /*# sourceMappingURL=checkout.css.map */

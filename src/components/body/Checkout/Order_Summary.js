@@ -1,6 +1,6 @@
 import React from "react"
 
-const OrderSummary = ( { cartItems } ) => {
+const OrderSummary = ( { cartItems, shippingCost } ) => {
 
 
     console.log(cartItems)
@@ -21,6 +21,10 @@ const OrderSummary = ( { cartItems } ) => {
 
     }
 
+    console.log(calculateTotalPrice())
+    console.log(shippingCost)
+
+
     return (
 
         <div id="order_summary_section">
@@ -33,10 +37,10 @@ const OrderSummary = ( { cartItems } ) => {
             <div>
 
                 <p id="amount_of_items"> {cartItems.length} items </p> 
-
+                <hr />
             <div id="order_summary_item_list">
 
-                <hr />
+                
 
 
                 {
@@ -46,7 +50,7 @@ const OrderSummary = ( { cartItems } ) => {
 
                         <img src={item.mini_image} width="100px" height="auto"/>
 
-                        <div> 
+                        <div id="name_and_brand_summary"> 
                             <h4> {item.name} </h4>
                             <p> Brand: {item.brand} </p>
                         </div>
@@ -58,34 +62,40 @@ const OrderSummary = ( { cartItems } ) => {
                     )
                 }
 
-                <hr />
-            </div>
                 
+            </div>
+                <hr />
 
                 <div className="order_summary_info"> 
 
                     <div className="order_summary_info_item">
-                        <p> Subtotal </p>
-                        <p> ${calculateTotalPrice()} </p>
+                        <p> Item Total </p>
+                        <p> ${calculateTotalPrice().toFixed(2)} </p>
                     </div>
 
                     <div className="order_summary_info_item">
                         <p> Shipping </p>
-                        <p> $20.00 </p>
+                        <p> ${shippingCost.toFixed(2)} </p>
                     </div>
 
                 </div>
 
+                <hr />
+
                 <div>
 
-                <div className="order_summary_info_item">
-                        <h4> Subtotal </h4>
-                        <h4> ${calculateTotalPrice() + 20} </h4>
-                </div>
+                    <div className="order_summary_info_item">
+                            <h4> Subtotal </h4>
+                            <h4> ${(calculateTotalPrice() + shippingCost).toFixed(2)} </h4>
+                    </div>
 
 
                 </div>
 
+                <div id="summary_button_container">
+                    <button className="item_button"> Confirm Purchase </button>
+                </div>
+                
 
             </div>
             
