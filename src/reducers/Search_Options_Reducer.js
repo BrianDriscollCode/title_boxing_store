@@ -27,7 +27,8 @@ const search_options_list = [
             "Title_Boxing",
             "Title_Boxing_MMA",
             "USA_Boxing",
-            "Pro_Mex"
+            "Pro_Mex",
+            "Rival"
         ],        
     },
     {
@@ -66,7 +67,26 @@ const search_options_list = [
             "Fighting",
             "Viper"
         ]
-    }
+    },
+    {
+        type: 'punching_bag',
+        option: 'category',
+        categories: [
+            "All",
+            "Heavy_Bag",
+            "Speed_Bag",
+            "Double_End"
+        ]
+    },
+    {
+        type: 'punching_bag',
+        option: "brand",
+        brands: [
+            "Title_Boxing",
+            "Pro_Mex"
+        ]
+    },
+    
     
 
 ]

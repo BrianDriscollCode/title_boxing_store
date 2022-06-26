@@ -28,6 +28,14 @@ const banner_list = [
         image_link: "images/banners/Banner-Headgear_1.jpg",
         description: "It’s vital in boxing and combat sports to protect yourself so that you can train and perform at your peak and stay injury-free. We feature the greatest collection of training and competition headgear available anywhere. Select from traditional, full-face and no-contact training headgear, and USA Boxing approved amateur competition headgear from brands including the full line of TITLE Boxing, Fighting, Pro Mex, Rival, Adidas, Golden Boy Boxing, WBC and more."
 
+    },
+    {
+
+        type: "punching_bag",
+        title: "Punching Bags",
+        image_link: "images/banners/Punching_Bags_1.jpg",
+        description: "Punching bags are the oldest form of boxing and combat sport training dating back more than a century. And still today, punching bags provide the most advanced and beneficial training available. TITLE Boxing features the best selection of punching bags from traditional heavy bags, full-length Thai heavy bags, uppercut heavy bags, water filled heavy bags, wall mount heavy bags, freestanding heavy bags, heavy bag stands and hangers, speed bags, speed bag platforms, double end bags, and every accessory available to complete your punching bag demands. Brands featuring TITLE Boxing, Fighting, Pro Mex, Rival, Adidas, Century and more."
+
     }
 
 

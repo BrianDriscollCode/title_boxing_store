@@ -503,6 +503,174 @@ const initial_product_list = [
             'Wraparound adjustable wrist strap with D-ring and hook-and-loop closure'
         ],
         info: "There is a new champion in the world of super bag gloves! Now with exclusive Gel Enforced Lining and multi-layered foam padding for the ultimate in style, performance, protection and power. Gel lining delivers an unbeatable layer of custom form fit and impact resistance. Friends, once you try these you will not go back to regular bag gloves again. All-leather outer with special hand compartment lining for cool, dry and comfortable wear. Awesome wraparound adjustable wrist strap with D-ring and hook-and-loop closure for secure fit. Weight: Approx. 16 oz."
-    }
+    },
+    {
+        type: "boxing_glove",
+        id: 20,
+        name: "Rival Boxing Gloves RB7",
+        category: "Sparring_Gloves",
+        price: 63.99, 
+        brand: 'Rival',
+        quantity: 10, 
+        mini_image: "/images/products/boxing_gloves/0009/single_display/rival_boxing_gloves_mini_0009.jpg",
+        display_images: [
+
+            'images/products/boxing_gloves/0009/rival_boxing_gloves_angle_0009.jpg',
+            'images/products/boxing_gloves/0009/rival_boxing_gloves_MAIN_0009.jpg',
+            'images/products/boxing_gloves/0009/rival_boxing_gloves_single_0009.jpg',
+
+        ],
+        details: [
+            'Exclusive Gel Enforced Lining and multi-layered foam padding',
+            'Gel lining delivers an unbeatable layer of custom form fit and impact resistance',
+            'All-leather outer with special hand compartment lining for cool, dry and comfortable wear',
+            'Wraparound adjustable wrist strap with D-ring and hook-and-loop closure'
+        ],
+        info: "There is a new champion in the world of super bag gloves! Now with exclusive Gel Enforced Lining and multi-layered foam padding for the ultimate in style, performance, protection and power. Gel lining delivers an unbeatable layer of custom form fit and impact resistance. Friends, once you try these you will not go back to regular bag gloves again. All-leather outer with special hand compartment lining for cool, dry and comfortable wear. Awesome wraparound adjustable wrist strap with D-ring and hook-and-loop closure for secure fit. Weight: Approx. 16 oz."
+    },
+    {
+        type: "boxing_glove",
+        id: 21,
+        name: "Pro Mex Combatiente Pro Gloves",
+        category: "Boxing_Competition_Gloves",
+        price: 23.99, 
+        brand: 'Pro Mex',
+        quantity: 10, 
+        mini_image: "/images/products/boxing_gloves/0010/single_display/pro_mex_boxing_gloves_mini_0010.jpg",
+        display_images: [
+
+            'images/products/boxing_gloves/0010/pro_mex_boxing_gloves_0010.jpg',
+            'images/products/boxing_gloves/0010/pro_mex_boxing_gloves_single_0010.jpg',
+            'images/products/boxing_gloves/0010/pro_mex_boxing_model_0010.jpg',
+
+        ],
+        details: [
+            'Exclusive Gel Enforced Lining and multi-layered foam padding',
+            'Gel lining delivers an unbeatable layer of custom form fit and impact resistance',
+            'All-leather outer with special hand compartment lining for cool, dry and comfortable wear',
+            'Wraparound adjustable wrist strap with D-ring and hook-and-loop closure'
+        ],
+        info: "There is a new champion in the world of super bag gloves! Now with exclusive Gel Enforced Lining and multi-layered foam padding for the ultimate in style, performance, protection and power. Gel lining delivers an unbeatable layer of custom form fit and impact resistance. Friends, once you try these you will not go back to regular bag gloves again. All-leather outer with special hand compartment lining for cool, dry and comfortable wear. Awesome wraparound adjustable wrist strap with D-ring and hook-and-loop closure for secure fit. Weight: Approx. 16 oz."
+    },
+    {
+        type: "punching_bag",
+        id: 22,
+        name: "Title Punching Bag Heavy",
+        category: "Heavy_Bag",
+        price: 212.99, 
+        brand: 'Title_Boxing',
+        quantity: 10, 
+        mini_image: "/images/products/punching_bags/0001/single_display/title_punching_bag_0001_mini.jpg",
+        display_images: [
+
+            'images/products/punching_bags/0001/title_punching_bag_0001_MAIN.jpg',
+            'images/products/punching_bags/0001/title_punching_bag_0001_model.jpg',
+            'images/products/punching_bags/0001/title_punching_bag_0001_top.jpg',
+
+        ],
+        details: [
+            'Exclusive Gel Enforced Lining and multi-layered foam padding',
+            'Gel lining delivers an unbeatable layer of custom form fit and impact resistance',
+            'All-leather outer with special hand compartment lining for cool, dry and comfortable wear',
+            'Wraparound adjustable wrist strap with D-ring and hook-and-loop closure'
+        ],
+        info: "There is a new champion in the world of super bag gloves! Now with exclusive Gel Enforced Lining and multi-layered foam padding for the ultimate in style, performance, protection and power. Gel lining delivers an unbeatable layer of custom form fit and impact resistance. Friends, once you try these you will not go back to regular bag gloves again. All-leather outer with special hand compartment lining for cool, dry and comfortable wear. Awesome wraparound adjustable wrist strap with D-ring and hook-and-loop closure for secure fit. Weight: Approx. 16 oz."
+    },
+    {
+        type: "punching_bag",
+        id: 23,
+        name: "Title Punching Bag Medium",
+        category: "Heavy_Bag",
+        price: 82.99, 
+        brand: 'Title_Boxing',
+        quantity: 10, 
+        mini_image: "/images/products/punching_bags/0002/single_display/title_punching_bag_0002_mini.jpg",
+        display_images: [
+
+            'images/products/punching_bags/0002/title_punching_bag_0002_MAIN.jpg',
+            'images/products/punching_bags/0002/title_punching_bag_0002_model.jpg',
+            'images/products/punching_bags/0002/title_punching_bag_0002_top.jpg',
+
+        ],
+        details: [
+            'Exclusive Gel Enforced Lining and multi-layered foam padding',
+            'Gel lining delivers an unbeatable layer of custom form fit and impact resistance',
+            'All-leather outer with special hand compartment lining for cool, dry and comfortable wear',
+            'Wraparound adjustable wrist strap with D-ring and hook-and-loop closure'
+        ],
+        info: "There is a new champion in the world of super bag gloves! Now with exclusive Gel Enforced Lining and multi-layered foam padding for the ultimate in style, performance, protection and power. Gel lining delivers an unbeatable layer of custom form fit and impact resistance. Friends, once you try these you will not go back to regular bag gloves again. All-leather outer with special hand compartment lining for cool, dry and comfortable wear. Awesome wraparound adjustable wrist strap with D-ring and hook-and-loop closure for secure fit. Weight: Approx. 16 oz."
+    },
+    {
+        type: "punching_bag",
+        id: 24,
+        name: "Title Punching Speed Bag",
+        category: "Speed_Bag",
+        price: 52.99, 
+        brand: 'Title_Boxing',
+        quantity: 10, 
+        mini_image: "/images/products/punching_bags/0003/single_display/title_punching_speed_bag_0003_mini.jpg",
+        display_images: [
+
+            'images/products/punching_bags/0003/title_punching_speed_bag_0003_MAIN.jpg',
+            'images/products/punching_bags/0003/title_punching_speed_bag_0003_model.jpg',
+            'images/products/punching_bags/0003/title_punching_speed_bag_0003_model_2.jpg',
+
+        ],
+        details: [
+            'Exclusive Gel Enforced Lining and multi-layered foam padding',
+            'Gel lining delivers an unbeatable layer of custom form fit and impact resistance',
+            'All-leather outer with special hand compartment lining for cool, dry and comfortable wear',
+            'Wraparound adjustable wrist strap with D-ring and hook-and-loop closure'
+        ],
+        info: "There is a new champion in the world of super bag gloves! Now with exclusive Gel Enforced Lining and multi-layered foam padding for the ultimate in style, performance, protection and power. Gel lining delivers an unbeatable layer of custom form fit and impact resistance. Friends, once you try these you will not go back to regular bag gloves again. All-leather outer with special hand compartment lining for cool, dry and comfortable wear. Awesome wraparound adjustable wrist strap with D-ring and hook-and-loop closure for secure fit. Weight: Approx. 16 oz."
+    },
+    {
+        type: "punching_bag",
+        id: 25,
+        name: "Title Punching Mount Bag",
+        category: "Heavy_Bag",
+        price: 152.99, 
+        brand: 'Title_Boxing',
+        quantity: 10, 
+        mini_image: "/images/products/punching_bags/0004/single_display/title_punching_mount_bag_0004_mini.jpg",
+        display_images: [
+
+            'images/products/punching_bags/0004/title_punching_mount_bag_0004_MAIN.jpg',
+            'images/products/punching_bags/0004/title_punching_mount_bag_0004_model.jpg',
+            'images/products/punching_bags/0004/title_punching_mount_bag_0004_side.jpg',
+
+        ],
+        details: [
+            'Exclusive Gel Enforced Lining and multi-layered foam padding',
+            'Gel lining delivers an unbeatable layer of custom form fit and impact resistance',
+            'All-leather outer with special hand compartment lining for cool, dry and comfortable wear',
+            'Wraparound adjustable wrist strap with D-ring and hook-and-loop closure'
+        ],
+        info: "There is a new champion in the world of super bag gloves! Now with exclusive Gel Enforced Lining and multi-layered foam padding for the ultimate in style, performance, protection and power. Gel lining delivers an unbeatable layer of custom form fit and impact resistance. Friends, once you try these you will not go back to regular bag gloves again. All-leather outer with special hand compartment lining for cool, dry and comfortable wear. Awesome wraparound adjustable wrist strap with D-ring and hook-and-loop closure for secure fit. Weight: Approx. 16 oz."
+    },
+    {
+        type: "punching_bag",
+        id: 26,
+        name: "Pro Mex Double End Bag",
+        category: "Double_End",
+        price: 52.99, 
+        brand: 'Pro_Mex',
+        quantity: 10, 
+        mini_image: "/images/products/punching_bags/0005/single_display/pro_mex_double_bag_0005_mini.jpg",
+        display_images: [
+
+            "/images/products/punching_bags/0005/pro_mex_double_bag_0005_MAIN.jpg",
+            "/images/products/punching_bags/0005/pro_mex_double_bag_0005_model.jpg",
+
+        ],
+        details: [
+            'Exclusive Gel Enforced Lining and multi-layered foam padding',
+            'Gel lining delivers an unbeatable layer of custom form fit and impact resistance',
+            'All-leather outer with special hand compartment lining for cool, dry and comfortable wear',
+            'Wraparound adjustable wrist strap with D-ring and hook-and-loop closure'
+        ],
+        info: "There is a new champion in the world of super bag gloves! Now with exclusive Gel Enforced Lining and multi-layered foam padding for the ultimate in style, performance, protection and power. Gel lining delivers an unbeatable layer of custom form fit and impact resistance. Friends, once you try these you will not go back to regular bag gloves again. All-leather outer with special hand compartment lining for cool, dry and comfortable wear. Awesome wraparound adjustable wrist strap with D-ring and hook-and-loop closure for secure fit. Weight: Approx. 16 oz."
+    },
+    
     
 ]

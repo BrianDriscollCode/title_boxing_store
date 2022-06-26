@@ -52,6 +52,12 @@ const App = ( { products } ) => {
 
                         )}  />
 
+                        <Route path="/product/punching_bag" exact render={() => (
+
+                        <ProductPage productSetter="punching_bag" />
+
+                        )}  />
+
                         {/* Routing all the individual products to product/single/Item_Page'
                         
                             Uses the url structure to decide what product to show        */}

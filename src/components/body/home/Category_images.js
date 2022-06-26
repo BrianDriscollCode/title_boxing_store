@@ -41,27 +41,34 @@ const Category_Images = () => {
                     </Link>
                 </AnimationOnScroll>
 
-                <AnimationOnScroll animateIn="animate__fadeIn"><div 
-                    className="category_image" 
-                    id="category_3"
-                    style={{backgroundImage: `url(assets/home/punching_bag_home.jpg)` }}
-                >
+                <AnimationOnScroll animateIn="animate__fadeIn">
+                    <Link to="/product/punching_bag">
+                        <div 
+                        className="category_image" 
+                        id="category_3"
+                        style={{backgroundImage: `url(assets/home/punching_bag_home.jpg)` }}
+                        >
 
-                    <div className="centered_text"> <s>PUNCHING BAGS</s> </div>
+                        <div className="centered_text"> PUNCHING BAGS </div>
 
-                </div></AnimationOnScroll>
+                        </div>
+                    </Link>
+                </AnimationOnScroll>
 
-                <AnimationOnScroll animateIn="animate__fadeIn"><div 
-                    className="category_image" 
-                    id="category_4"
-                    style={{backgroundImage: `url(assets/home/coach_gear_home.jpg)` }}
-                >
+                <AnimationOnScroll animateIn="animate__fadeIn">
+                    <Link to="/product/shoes">
+                        <div 
+                        className="category_image" 
+                        id="category_4"
+                        style={{backgroundImage: `url(assets/home/coach_gear_home.jpg)` }}
+                        >
 
-                    <div className="centered_text"> 
-                            <s> COACH {'&'} TRAINER </s>
-                    </div>
-
-                </div></AnimationOnScroll>
+                        <div className="centered_text"> 
+                                SHOES
+                        </div>
+                        </div>
+                    </Link>
+                </AnimationOnScroll>
 
             </div>
             
