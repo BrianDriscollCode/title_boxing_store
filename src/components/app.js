@@ -12,8 +12,9 @@ import HomePage from "./body/home/Page"
 import ProductPage from "./body/product/Page"
 import CartPage from "./body/cart/Page"
 import CheckoutPage from "./body/Checkout/Page"
-
+import Purchased from "./body/Checkout/Purchased"
 import Item_Page from "./body/product/single/Item_Page";
+
 
 
 const App = ( { products } ) => {
@@ -77,6 +78,7 @@ const App = ( { products } ) => {
 
                         <Route path="/cart" exact component={CartPage} />
                         <Route path="/checkout" exact component={CheckoutPage} />
+                        <Route path="/purchased" exact component={Purchased} />
             
 
                     

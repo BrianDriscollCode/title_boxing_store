@@ -1601,6 +1601,11 @@
 }
 
 /* checkout page stylings */
+#checkout_div_container input {
+  font-size: 16px;
+  padding-left: 5px;
+}
+
 #middle_row_checkout {
   width: 33%;
 }
@@ -1726,7 +1731,7 @@
 }
 
 #last_name_1, #first_name_1 {
-  width: 100%;
+  width: 90%;
 }
 
 #shipping_method_container {
@@ -1761,7 +1766,7 @@
 }
 
 #date_and_cvv {
-  width: 100%;
+  width: 90%;
 }
 
 #expiry_date {
@@ -1869,6 +1874,34 @@
       -ms-flex-pack: center;
           justify-content: center;
   padding-bottom: 10px;
+}
+
+/* Purchased */
+#purchased_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 600px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#button_purchased {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#button_purchased h2 {
+  margin-right: 30px;
 }
 
 body {

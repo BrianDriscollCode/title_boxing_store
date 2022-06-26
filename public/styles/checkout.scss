@@ -1,5 +1,12 @@
 /* checkout page stylings */ 
 
+#checkout_div_container input {
+
+    font-size: 16px;
+    padding-left: 5px;
+
+}
+
 #middle_row_checkout {
 
     width: 33%;
@@ -107,7 +114,7 @@
 
 #last_name_1, #first_name_1 {
 
-    width: 100%;
+    width: 90%;
 
 }
 
@@ -154,7 +161,7 @@
 
 #date_and_cvv {
 
-    width: 100%;
+    width: 90%;
 
 }
 
@@ -265,6 +272,30 @@
 
 }
 
+/* Purchased */ 
+
+#purchased_container {
+
+    display: flex;
+    justify-content: center;
+    height: 600px;
+    align-items: center;
+
+}
+
+#button_purchased {
+
+    display: flex;
+    height: 100px;
+    align-items: center;
+
+
+}
+#button_purchased h2 {
+
+    margin-right: 30px;
+
+}
 
 
 

@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "react-router-dom"
 
 const OrderSummary = ( { cartItems, shippingCost } ) => {
 
@@ -93,7 +94,7 @@ const OrderSummary = ( { cartItems, shippingCost } ) => {
                 </div>
 
                 <div id="summary_button_container">
-                    <button className="item_button"> Confirm Purchase </button>
+                    <Link to="/Purchased"><button className="item_button"> Confirm Purchase </button></Link>
                 </div>
                 
 
