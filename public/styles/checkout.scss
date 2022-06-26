@@ -297,5 +297,97 @@
 
 }
 
+/* Media Queries */ 
+
+@media only screen and (max-width: 1496px) {
 
 
+    #checkout_div_wrapper {
+
+        width: 90%;
+
+    }
+
+}
+
+@media only screen and (max-width: 1230px) {
+
+
+    #checkout_div_wrapper {
+
+        flex-direction: column;
+
+    }
+
+    #middle_row_checkout {
+
+        display: flex;
+        align-self: center;
+        width: 60%;
+        flex-direction: column;
+
+    }
+
+    #shipping_address_container {
+
+        width: 60%;
+        align-self: center;
+
+    }
+
+    #shipping_methods_section {
+
+        margin: 0;
+
+    }
+
+    #payment_section {
+
+        margin: 0;
+
+    }
+
+    #order_summary_section {
+
+        width: 60%;
+        align-self: center;
+
+    }
+
+
+
+}
+
+@media only screen and (max-width: 590px) {
+
+    #shipping_address_container {
+
+        width: 95%;
+
+    }
+
+    #middle_row_checkout {
+
+        width: 95%;
+
+    }
+
+    #shipping_methods_section {
+
+        width: 100%;
+
+    }
+
+    #payment_section {
+
+        width: 100%;
+
+    }
+
+    #order_summary_section {
+
+        width: 95%;
+
+    }
+
+}

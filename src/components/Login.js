@@ -59,7 +59,7 @@ const Login = ( { accounts, accountActions, currentAccount } ) => {
 
                 <div id="login_container">
 
-                    <div>
+                    <div id="login_title_contents">
                         <h3> Registered Customers </h3>
                         <hr />
                         <p> If you have an account, sign in with your email address </p>
@@ -97,7 +97,7 @@ const Login = ( { accounts, accountActions, currentAccount } ) => {
                             />
                         </div>
 
-                        <div>
+                        <div id="login_button_container">
                             <button 
                                 className="item_button login_button"
                                 onClick={(e) => login(e)} 

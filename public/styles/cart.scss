@@ -91,4 +91,103 @@
 }
 
 
+/* Media Queries */ 
+
+@media only screen and (max-width: 1052px) {
+
+    #cart_page_container {
+
+        flex-direction: column;
+        
+    }
+
+    #cart_container {
+
+        align-self: center;
+    }
+
+    #summary_list {
+
+        align-self: center;
+        margin-top: 25px;
+
+    }
+
+    .cart_item {
+
+        flex-direction: column;
+
+    }
+
+    .left_cart_section {
+
+        align-self: center;
+
+    }
+
+    .right_cart_section {
+
+        align-self: center;
+
+    }
+    
+    .right_cart_section button {
+
+        margin-bottom: 25px;
+
+    }
+
+
+
+}
+
+@media only screen and (max-width: 830px) {
+
+    #cart_container {
+
+        width: 80%;
+
+    }
+
+    .cart_item {
+
+        width: 80%;
+
+    }
+
+    .left_cart_section img {
+
+        width: 80%;
+        align-self: center;
+
+
+    }
+
+    .left_cart_section h3 {
+
+        align-self: center;
+
+    }
+
+    .left_cart_section p {
+
+        align-self: center;
+
+    }
+
+    .left_cart_section {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    #summary_list {
+
+        width: 80%;
+
+    }
+
+}
 

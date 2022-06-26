@@ -163,3 +163,82 @@
     justify-content: center;
 
 }
+
+@media only screen and (max-width: 860px) {
+    
+    #login_page_wrapper {
+
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    #login_container {
+
+        align-self: center;
+        justify-content: center;
+        width: 100%;
+
+    }
+
+    #login_form {
+
+        display: flex;
+        justify-content: center;
+
+    }
+
+    #login_button_container {
+
+        display: flex;
+        justify-content: center;
+    }
+
+
+
+    #login_title_contents h3, p {
+
+        align-self: center;
+
+    }
+
+    .user_input_login label, .user_input_login input{
+
+        align-self: center;
+
+    }
+
+    .login_button {
+
+        align-self: center;
+
+    }
+
+    #new_customer_area {
+
+        align-self: center;
+        width: 100%;
+        margin-top: 25px;
+
+
+    }
+
+}
+
+/* Media Query for CreateAccount.js */
+
+@media only screen and (max-width: 695px) {
+
+    #create_page_container h2 {
+
+        text-align: center;
+    }
+
+    #create_page_wrapper {
+
+
+        width: 90%;
+
+    }
+
+}

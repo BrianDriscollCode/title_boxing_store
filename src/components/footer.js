@@ -19,9 +19,8 @@ const Footer = () => {
                         
                             <Link className="footer_link" to="/product/headgear"> Headgear </Link>
                         
-                            <Link className="footer_link"> Punching Bags </Link>
+                            <Link className="footer_link" to="/product/punching_bag"> Punching Bags </Link>
                 
-                            <Link className="footer_link"> Trainer Gear </Link>
                         </div>
                     </div>
 
