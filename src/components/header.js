@@ -23,7 +23,7 @@ const Header = ( { accounts, currentAccount } ) => {
 
         <div id="header">
 
-            <Page_Header cartAmount={getCartLength()}/>
+            <Page_Header cartAmount={getCartLength()} username={currentAccount[0].username}/>
             <Navigation />
             <Shipping_Info />
             

@@ -3,11 +3,12 @@ import OrderSummary from "./Order_Summary";
 import Payment from "./Payment";
 import ShippingAddress from "./Shipping_Address";
 import ShippingMethods from "./Shipping_Methods";
+import { accountActions } from "../../../actions";
 
 import { connect } from "react-redux";
 
 
-const Checkout_Page = ( { currentAccount, accounts } ) => {
+const Checkout_Page = ( { currentAccount, accounts, accountActions } ) => {
 
     let account = accounts.filter(account => currentAccount[0].username == account.username)        
 
@@ -22,6 +23,13 @@ const Checkout_Page = ( { currentAccount, accounts } ) => {
 
     }
 
+    
+    const removeAllCartItems = () => {
+
+        accountActions("REMOVE_ALL_ITEMS", {username: account[0].username})
+        console.log('remove all items')
+
+    }
 
     return (
         
@@ -40,7 +48,7 @@ const Checkout_Page = ( { currentAccount, accounts } ) => {
                     <Payment />
                 </div>
 
-                <OrderSummary cartItems={account[0].cart} shippingCost={shippingCost} />
+                <OrderSummary cartItems={account[0].cart} shippingCost={shippingCost} removeAllCartItems={removeAllCartItems} />
             </div>
 
              
@@ -57,4 +65,4 @@ const mapStateToProps = (state) => {
 
 }
 
-export default connect(mapStateToProps)(Checkout_Page)
+export default connect(mapStateToProps, { accountActions })(Checkout_Page)

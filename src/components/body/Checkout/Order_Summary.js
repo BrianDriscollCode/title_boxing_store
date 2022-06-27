@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "react-router-dom"
 
-const OrderSummary = ( { cartItems, shippingCost } ) => {
+const OrderSummary = ( { cartItems, shippingCost, removeAllCartItems } ) => {
 
 
     console.log(cartItems)
@@ -94,7 +94,13 @@ const OrderSummary = ( { cartItems, shippingCost } ) => {
                 </div>
 
                 <div id="summary_button_container">
-                    <Link to="/Purchased"><button className="item_button"> Confirm Purchase </button></Link>
+                    <Link to="/Purchased">
+                        <button 
+                            className="item_button"
+                            onClick={removeAllCartItems}
+                        > Confirm Purchase 
+                        </button>
+                    </Link>
                 </div>
                 
 

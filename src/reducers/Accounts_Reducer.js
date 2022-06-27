@@ -43,7 +43,29 @@ export default (all_accounts = initial_accounts, action) => {
             })
             
             return removalCartAccounts;
+        case "REMOVE_ALL_ITEMS":
+            
 
+            
+            //map out accounts
+            const removalAllCartAccounts = all_accounts.map(account => {
+               
+                //on targeted account, filter out cart item with matching uniqueId
+                if (account.username == action.payload.username) {
+
+                    return {...account, 
+                        cart: account.cart.filter(item => item.uniqueId == "NO ID EQUALS THIS")}
+
+                } else {
+
+                    return {...account}
+                }
+
+            })
+
+            console.log('remove all items ran')
+            
+            return removalAllCartAccounts;
         default: 
             return [...all_accounts]
 

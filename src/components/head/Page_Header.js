@@ -5,7 +5,7 @@ import { Cart, PersonFill, Search } from "react-bootstrap-icons"
 
 //Parent - src/header.js
 
-const Page_Header = ( { cartAmount } ) => {
+const Page_Header = ( { cartAmount, username } ) => {
 
 
     const [itemsInCart , setItemsInCart] = useState(0)
@@ -24,8 +24,9 @@ const Page_Header = ( { cartAmount } ) => {
 
                     <div id="functionality_header_items">
                         <div>
-                            <PersonFill />
-                            <Link to="/login" className="signIn"> Sign In </Link> 
+                            <Link to="/login" className="signIn"><PersonFill /></Link>
+                            <Link to="/login" className="signIn" id="show_signIn">  Sign In </Link> 
+                            <Link to="/login" className="signIn"><span id="show_username"> ({username}) </span></Link>
                         </div>
                         
                         <div className="spacer"> | </div>
