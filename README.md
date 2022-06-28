@@ -1,70 +1,48 @@
-# Getting Started with Create React App
+# Title Boxing Ecommerce Application
+![Title Boxing Logo](https://raw.githubusercontent.com/BrianDriscollCode/title_boxing_store/master/src/images/logo_titleboxingretail.jpg)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This application uses reusable components to create web pages using structured data. Specifically, these are the reusable components in the application:
 
-## Available Scripts
+1. components/body/product
+2. component/body/product/single
+3. component/body/product/options
+4. component/body/cart
+5. component/body/checkout
 
-In the project directory, you can run:
+The React JavaScript files in these folders utilize redux state to populate the page with user account information and product information. 
 
-### `npm start`
+### To Start Application 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+-**npm start**
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Structured Data 
 
-### `npm test`
+Files used to populate the webpages are located at the "reducers" folder in ./src 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+These files populate item data, accounts, current account, search options, and banners. There are also reducer functions written to allow the data to be changed depending on a user's action. 
 
-### `npm run build`
+To make changes and call these reducers, one must use the the namespace import { connect } or import an action from the /action folder and dispatch it to the reducers.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Application Functionality
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Populate product lists and single item pages with structured data (represents pulling from a database on the frontend)
+2. Login and create an account
+3. Cart management tied to current account (add/delete)
+4. Checkout items with different shipping options
+5. Filter through items using category, price, and brand
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Application Structure
 
-### `npm run eject`
+The goal was to follow this structure as much as possible. 
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+->FOLDER NAME (Ex: Item_Page)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+--> Page.js (connects to redux, manages top level logic, passes down necessary data from redux)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---> Page-level-components (receives state information from Page.js, manages individual component logic, and calls page level functions ONLY when necessary)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Last Thoughts 
 
-## Learn More
+This program represents a way to build a website by creating reusable components so that a client can list products without the hassle of building new web pages for every product type or every single item. Therefore, this shows a cost-effective way to build websites for clients while also enabling account functionality. 
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
