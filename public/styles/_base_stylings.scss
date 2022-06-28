@@ -1,5 +1,6 @@
 $base_color: white;
 $secondary_color: #3a3a3a;
+$extra_color: #e21a36;
 
 @mixin flex_direction_align_justify($direction, $itemAlign, $justify) {
     display: flex;

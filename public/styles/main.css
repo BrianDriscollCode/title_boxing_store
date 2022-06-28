@@ -542,6 +542,10 @@
   margin-left: 15px;
 }
 
+.star_ratings {
+  margin-bottom: 10px;
+}
+
 .item_button {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(14%, #c61c34), color-stop(52%, #e21a36), color-stop(83%, #e21a36), color-stop(92%, #e21a36), to(#e21a36));
   background: linear-gradient(180deg, #c61c34 14%, #e21a36 52%, #e21a36 83%, #e21a36 92%, #e21a36 100%);
