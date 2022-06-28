@@ -25,6 +25,12 @@ const OrderSummary = ( { cartItems, shippingCost, removeAllCartItems } ) => {
     console.log(calculateTotalPrice())
     console.log(shippingCost)
 
+    if (totalPrice > 300 & shippingCost < 9) {
+
+        shippingCost = 0;
+
+    }
+
 
     return (
 
@@ -76,7 +82,11 @@ const OrderSummary = ( { cartItems, shippingCost, removeAllCartItems } ) => {
 
                     <div className="order_summary_info_item">
                         <p> Shipping </p>
-                        <p> ${shippingCost.toFixed(2)} </p>
+                        <p> ${
+                               
+                                shippingCost.toFixed(2)
+                            
+                            } </p>
                     </div>
 
                 </div>

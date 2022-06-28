@@ -10,7 +10,7 @@ const Shipping_Info = () => {
         <div id="shipping_info">
             <div id="red_shipping_info"> 
             
-                {'FREE SHIPPING ON ALL ORDERS OVER $100'}
+                {'FREE STANDARD SHIPPING ON ALL ORDERS OVER $300'}
 
             </div>
         </div>
