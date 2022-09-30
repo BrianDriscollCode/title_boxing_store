@@ -10,7 +10,7 @@ const Purchased = () => {
 
     
             <div id="button_purchased">
-                <h2> Product Purchased! </h2>
+                <h2> Products Purchased! </h2>
                 <Link to="/product/boxing_glove"><button class="item_button"> back to shopping </button></Link>
             </div>
 

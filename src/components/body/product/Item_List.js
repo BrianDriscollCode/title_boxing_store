@@ -55,6 +55,15 @@ const Item_List = ( { products, filterVariable, filterType } ) => {
                             <img src={product.mini_image} />
                             <h3> {product.name} </h3>
                             <p> ${product.price} </p>
+                            <div className="star_ratings">
+                                <StarRatings 
+                                rating={Math.floor(Math.random() * 5) + 2.5}
+                                starRatedColor="#e21a36"
+                                numberOfStars={5}
+                                name="rating"
+                                starDimension='20px'
+                                />
+                            </div>
                             <Link to={`/product/${product.type}/${product.id}`}> <button className="item_button button_product_page"> Learn More </button> </Link> 
             
                         </div> 
@@ -75,7 +84,15 @@ const Item_List = ( { products, filterVariable, filterType } ) => {
                             <img src={product.mini_image} />
                             <h3> {product.name} </h3>
                             <p> ${product.price} </p>
-                            
+                            <div className="star_ratings">
+                                <StarRatings 
+                                rating={Math.floor(Math.random() * 5) + 2.5}
+                                starRatedColor="#e21a36"
+                                numberOfStars={5}
+                                name="rating"
+                                starDimension='20px'
+                                />
+                            </div>
                             <Link to={`/product/${product.type}/${product.id}`}> <button className="item_button button_product_page"> Learn More </button> </Link>
                             
                         </div> 
@@ -94,6 +111,15 @@ const Item_List = ( { products, filterVariable, filterType } ) => {
                             <img src={product.mini_image} />
                             <h3> {product.name} </h3>
                             <p> ${product.price} </p>
+                            <div className="star_ratings">
+                                <StarRatings 
+                                rating={Math.floor(Math.random() * 5) + 2.5}
+                                starRatedColor="#e21a36"
+                                numberOfStars={5}
+                                name="rating"
+                                starDimension='20px'
+                                />
+                            </div>
                             <Link to={`/product/${product.type}/${product.id}`}> <button className="item_button button_product_page"> Learn More </button> </Link> 
                             
                         </div> 

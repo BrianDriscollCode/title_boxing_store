@@ -5,8 +5,8 @@ import { accountActions } from "../actions";
 
 const Login = ( { accounts, accountActions, currentAccount } ) => {
 
-    const [username, setUsername] = useState('');
-    const [password, setPassword] = useState('');
+    const [username, setUsername] = useState('brianR');
+    const [password, setPassword] = useState('password');
 
     const [loginSuccess, setLoginSuccess] = useState(false);
     const [loginFail, setLoginFail] = useState(false)
@@ -62,7 +62,7 @@ const Login = ( { accounts, accountActions, currentAccount } ) => {
                     <div id="login_title_contents">
                         <h3> Registered Customers </h3>
                         <hr />
-                        <p> If you have an account, sign in with your email address </p>
+                        <p> Use the pre-filled credentials OR create your own account. </p>
 
                     </div>
 
@@ -76,7 +76,7 @@ const Login = ( { accounts, accountActions, currentAccount } ) => {
                             />
                             {
                                 loginSuccess ?
-                                    <span className="form_success"> Successful login! </span>:
+                                    <span className="form_success"> Successful login! See cart items. </span>:
                                     null
                             }
                             {
