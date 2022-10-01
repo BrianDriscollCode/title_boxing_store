@@ -28,7 +28,7 @@ const Cart_Page = ( { accounts, currentAccount } ) => {
             
         )
 
-        setCurrentCart(pageAccount[0]?.cart)
+        setCurrentCart(currentAccount[0].cart)
     })
 
     return (

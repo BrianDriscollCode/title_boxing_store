@@ -11,9 +11,10 @@ const Header = ( { accounts, currentAccount } ) => {
     //so cart length on top right of page can be updated
     const getCartLength = () => {
 
-        const pageAccount = accounts.filter(account => account.username == currentAccount[0].username)  
-
-        return pageAccount[0].cart.length
+       // const pageAccount = accounts.filter(account => account.username == currentAccount[0].username)  
+        console.log(currentAccount[0])
+        console.log(currentAccount)
+        return currentAccount[0].cart.length
 
     }
 

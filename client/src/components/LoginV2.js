@@ -1,9 +1,11 @@
 import axios from "axios";
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import { connect } from "react-redux"
+import { accountActions } from "../actions";
 
 
-const LoginV2 = () => {
+const LoginV2 = ( { accountActions, account, currentAccount } ) => {
 
     const [username, setUsername] = useState('brianR');
     const [password, setPassword] = useState('password');
@@ -16,11 +18,19 @@ const LoginV2 = () => {
         console.log(e)
     }
 
+    console.log(currentAccount)
+
     const login = async (e, passedUsername, passedPassword) => {
 
         e.preventDefault();
         let local_account_variable;
         console.log('test')
+
+        let response1 = await axios.get("http://localhost:9000/login")
+            .then(res => {
+                console.log(res)
+            })
+
         let response = await axios.post("http://localhost:9000/login", {
 
             data: {
@@ -30,9 +40,15 @@ const LoginV2 = () => {
 
         })
         .then(res => {
-            local_account_variable = res
-            console.log(res);
+            let contentType = res.headers['content-type'];
+            local_account_variable = res.data[0]
+            let cart = JSON.parse(res.data[0].cart);
+            local_account_variable.cart = cart;
+            console.log(local_account_variable.cart.length)
+            accountActions("SET_CURRENT_ACCOUNT", res.data[0])
         })
+
+       
 
     }
 
@@ -118,4 +134,10 @@ const LoginV2 = () => {
 
 }
 
-export default LoginV2;
+const mapStateToProps = (state) => {
+
+    return { accounts: state.accounts, currentAccount: state.currentAccount }
+
+}
+
+export default connect(mapStateToProps, { accountActions })(LoginV2)

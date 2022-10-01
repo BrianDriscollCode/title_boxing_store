@@ -21,12 +21,12 @@ router.route('/')
         })
     })
     .post((req, res) => {
-        let queryString = 'SELECT * FROM accounts WHERE (firstname = ' + `"` + req.body.data.username + `"` + ' AND ' + "password" +` = "` + req.body.data.password + `"` + ')'; 
+        let queryString = 'SELECT * FROM accounts WHERE (username = ' + `"` + req.body.data.username + `"` + ' AND ' + "password" +` = "` + req.body.data.password + `"` + ')'; 
 
         db.query(queryString, function (err, result, field) {
 
             if (err) throw err;
-            console.log(result)
+            console.log(result);
             console.log(req.body.data.username)
             single_account = result;
             res.send(single_account)
