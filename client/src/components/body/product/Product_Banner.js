@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { connect } from "react-redux";
 
 //Parent - product/Page.js
@@ -6,6 +6,12 @@ import { connect } from "react-redux";
 //sets banner based on url
 
 const Product_Banner = ( { banners, productSetter } ) => {
+
+    useEffect(() => {
+        console.log(banners)
+        console.log("test")
+    }, [])
+    
 
     return (
 
