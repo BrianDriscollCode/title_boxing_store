@@ -1,3 +1,6 @@
+import axios from "axios";
+import { accountActions } from "../actions";
+
 export default (current_account = initial_account, action) => {
 
     switch (action.type) {
@@ -5,6 +8,8 @@ export default (current_account = initial_account, action) => {
             return [action.payload]
         case "GET_CURRENT_ACCOUNT":
             return [...current_account]
+        case "ADD_CART_ITEM":
+            return [{...current_account[0], cart: [...current_account[0].cart, action.payload.cart]}]
         default: 
             return [...current_account]
 

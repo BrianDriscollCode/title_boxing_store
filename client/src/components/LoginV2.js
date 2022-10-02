@@ -28,7 +28,7 @@ const LoginV2 = ( { accountActions, account, currentAccount } ) => {
 
         let response1 = await axios.get("http://localhost:9000/login")
             .then(res => {
-                console.log(res)
+                console.log(res, " -get request")
             })
 
         let response = await axios.post("http://localhost:9000/login", {
@@ -44,7 +44,7 @@ const LoginV2 = ( { accountActions, account, currentAccount } ) => {
             local_account_variable = res.data[0]
             let cart = JSON.parse(res.data[0].cart);
             local_account_variable.cart = cart;
-            console.log(local_account_variable.cart.length)
+            console.log(local_account_variable.cart.length, "-loginV2 length")
             accountActions("SET_CURRENT_ACCOUNT", res.data[0])
         })
 

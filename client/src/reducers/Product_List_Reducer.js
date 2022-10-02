@@ -1,6 +1,5 @@
 export default (all_products = initial_product_list, action) => {
 
-        console.log(action.type)
         switch (action.type) {
             case "boxing_gloves":
                 return all_products.filter(product => 

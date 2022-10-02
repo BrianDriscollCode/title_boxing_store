@@ -7,10 +7,10 @@ import { connect } from "react-redux";
 
 const Product_Banner = ( { banners, productSetter } ) => {
 
-    useEffect(() => {
-        console.log(banners)
-        console.log("test")
-    }, [])
+    // useEffect(() => {
+    //     console.log(banners)
+    //     console.log("test")
+    // }, [])
     
 
     return (

@@ -12,8 +12,8 @@ const Header = ( { accounts, currentAccount } ) => {
     const getCartLength = () => {
 
        // const pageAccount = accounts.filter(account => account.username == currentAccount[0].username)  
-        console.log(currentAccount[0])
-        console.log(currentAccount)
+        // console.log(currentAccount[0])
+        // console.log(currentAccount)
         return currentAccount[0].cart.length
 
     }

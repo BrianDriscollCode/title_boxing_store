@@ -1,11 +1,12 @@
-import React, { useEffect, useState } from "react"
-import Item_Gallery from "./Gallery"
-import Item_Details from "./Details"
-import Item_Info from "./Info"
+import React, { useEffect, useState } from "react";
+import Item_Gallery from "./Gallery";
+import Item_Details from "./Details";
+import Item_Info from "./Info";
 
-import { connect } from "react-redux"
-import { Steam } from "react-bootstrap-icons"
-import { accountActions } from "../../../../actions"
+import axios from "axios";
+import { connect } from "react-redux";
+import { Steam } from "react-bootstrap-icons";
+import { accountActions } from "../../../../actions";
 
 //Link routed through "learn more" buttons on product/Page.js
 
@@ -31,10 +32,12 @@ import { accountActions } from "../../../../actions"
 //2. single/Gallery.js
 //3. single/Info.js
 
-const Item_Page = ( { productType, productId, products, currentAccount, accountActions, accounts } ) => {
+const Item_Page = ( { productType, productId, products, currentAccount, accountActions} ) => {
 
     const [accountUpdated, setAccountUpdated] = useState(0)
     
+    console.log(currentAccount, " -current account")
+
     //get product images
     const images = products.filter(product => product.id === productId).map(product => {
 
@@ -61,21 +64,39 @@ const Item_Page = ( { productType, productId, products, currentAccount, accountA
         }
 
         //matches up with the account and then adds item to cart
-        await accountActions("ADD_ITEM", insertedAccount)
-        getCurrentAccount();
+        await accountActions("ADD_CART_ITEM", insertedAccount)
+        //getCurrentAccount();
         setAccountUpdated(accountUpdated + 1);
+        //console.log(JSON.stringifycurrentAccount[0].cart)
+        let response1 = await axios.get("http://localhost:9000/addCartItem")
+            .then((res) => {
+                console.log(res)
+            })
+        
+        let response = await axios.post("http://localhost:9000/addCartItem", {
+
+            data: {
+                username: "Ken",
+                cart: JSON.stringify(currentAccount[0].cart)
+            }
+
+        })
+        .then(res => {
+            console.log(currentAccount[0].cart, "-Item_Page print")
+            console.log(res)
+        })
     }
 
-    const getCurrentAccount = () => {
+    // const getCurrentAccount = () => {
 
-        let current = accounts.filter(
+    //     let current = accounts.filter(
             
-            account => account.username == currentAccount[0].username
+    //         account => account.username == currentAccount[0].username
             
-        )
+    //     )
 
-        accountActions("SET_CURRENT_ACCOUNT", current[0])
-    }
+    //     accountActions("SET_CURRENT_ACCOUNT", current[0])
+    // }
 
     return (
 
@@ -105,7 +126,7 @@ const mapStateToProps = (state) => {
     return { 
         products: state.products, 
         currentAccount: state.currentAccount, 
-        accounts: state.accounts
+        //accounts deleted
     }
 
 }

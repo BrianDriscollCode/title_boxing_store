@@ -10,7 +10,8 @@ import { connect } from "react-redux";
 
 const Checkout_Page = ( { currentAccount, accounts, accountActions } ) => {
 
-    let account = accounts.filter(account => currentAccount[0].username == account.username)        
+    //let account = accounts.filter(account => currentAccount[0].username == account.username)        
+    let account = currentAccount[0];
 
     console.log(account)
 
@@ -48,7 +49,8 @@ const Checkout_Page = ( { currentAccount, accounts, accountActions } ) => {
                     <Payment />
                 </div>
 
-                <OrderSummary cartItems={account[0].cart} shippingCost={shippingCost} removeAllCartItems={removeAllCartItems} />
+                {/* Broken */}
+                {/* <OrderSummary cartItems={account.cart[0]} shippingCost={shippingCost} removeAllCartItems={removeAllCartItems} /> */}
             </div>
 
              
