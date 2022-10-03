@@ -26,8 +26,8 @@ router.route('/')
         db.query(queryString, function (err, result, field) {
 
             if (err) throw err;
-            console.log(result);
-            console.log(req.body.data.username)
+            console.log(result, "-result");
+            console.log(req.body.data.username, "-username")
             single_account = result;
             res.send(single_account)
     

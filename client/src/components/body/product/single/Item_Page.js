@@ -62,29 +62,38 @@ const Item_Page = ( { productType, productId, products, currentAccount, accountA
             cart: item
             
         }
+        console.log(insertedAccount, " -inserted account")
+        console.log(currentAccount[0].cart, " - cart")
 
         //matches up with the account and then adds item to cart
         await accountActions("ADD_CART_ITEM", insertedAccount)
+
+        let newCart = [
+            insertedAccount.cart, ...currentAccount[0].cart
+        ]
+
+        console.log(newCart, " -after insert")
+        
+
         //getCurrentAccount();
         setAccountUpdated(accountUpdated + 1);
         //console.log(JSON.stringifycurrentAccount[0].cart)
         let response1 = await axios.get("http://localhost:9000/addCartItem")
             .then((res) => {
-                console.log(res)
+                console.log(res, "-get request")
             })
         
         let response = await axios.post("http://localhost:9000/addCartItem", {
-
             data: {
-                username: "Ken",
-                cart: JSON.stringify(currentAccount[0].cart)
+                username: insertedAccount.username,
+                cart: JSON.stringify(newCart)
             }
-
         })
-        .then(res => {
-            console.log(currentAccount[0].cart, "-Item_Page print")
-            console.log(res)
-        })
+        // .then(res => {
+        //     console.log(currentAccount[0].cart, "-Item_Page cart")
+        //     console.log(JSON.stringify(currentAccount[0].cart))
+        //     console.log(res)
+        // })
     }
 
     // const getCurrentAccount = () => {

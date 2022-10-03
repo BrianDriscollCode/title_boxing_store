@@ -20,16 +20,16 @@ const Cart_Page = ( { currentAccount } ) => {
     ];
 
     //update cart on rerender
-    // useEffect(() => {
+    useEffect(() => {
 
-    //     pageAccount = accounts.filter(account => 
+        // pageAccount = accounts.filter(account => 
             
-    //         account.username == currentAccount[0].username
+        //     account.username == currentAccount[0].username
             
-    //     )
+        // )
 
-    //     setCurrentCart(currentAccount[0].cart)
-    // })
+        setCurrentCart(currentAccount[0].cart)
+    })
 
     return (
         

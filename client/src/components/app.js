@@ -4,6 +4,7 @@ import { connect } from "react-redux";
 
 import Login from "./Login"
 import LoginV2 from "./LoginV2";
+import LoginV3 from "./LoginV3";
 import CreateAccount from "./CreateAccount";
 
 import Header from "./header"
@@ -34,7 +35,7 @@ const App = ( { products } ) => {
 
                         <Route path="/" exact component={HomePage}/>
 
-                        <Route path="/login" exact component={LoginV2} />
+                        <Route path="/login" exact component={LoginV3} />
                         <Route path="/create_account" exact component={CreateAccount} />
 
                         <Route path="/product/boxing_glove" exact render={() => (

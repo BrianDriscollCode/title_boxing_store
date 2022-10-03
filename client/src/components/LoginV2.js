@@ -13,18 +13,18 @@ const LoginV2 = ( { accountActions, account, currentAccount } ) => {
     const [loginSuccess, setLoginSuccess] = useState(false);
     const [loginFail, setLoginFail] = useState(false)
 
+    const [verificationCode, setVerificationCode] = useState("");
+    const [askVerification, setAskVerification] = useState(true);
+
     const printOut = (e) => {
         e.preventDefault();
         console.log(e)
     }
 
-    console.log(currentAccount)
-
     const login = async (e, passedUsername, passedPassword) => {
 
         e.preventDefault();
         let local_account_variable;
-        console.log('test')
 
         let response1 = await axios.get("http://localhost:9000/login")
             .then(res => {
@@ -40,15 +40,35 @@ const LoginV2 = ( { accountActions, account, currentAccount } ) => {
 
         })
         .then(res => {
-            let contentType = res.headers['content-type'];
+            //let contentType = res.headers['content-type'];
             local_account_variable = res.data[0]
             let cart = JSON.parse(res.data[0].cart);
             local_account_variable.cart = cart;
-            console.log(local_account_variable.cart.length, "-loginV2 length")
+            //console.log(local_account_variable.cart.length, "-loginV2 length")
+            console.log(res.data[0], "-account data after load")
             accountActions("SET_CURRENT_ACCOUNT", res.data[0])
         })
 
-       
+        let verify_request = await axios.get("http://localhost:9000/vonage_verify/request")
+            .then(res => {
+                console.log(res, " -get active verify")
+            })
+   
+        
+    }
+
+    const check_verification = async (e, verify_code) => {
+        console.log("check verification")
+        e.preventDefault();
+
+        let verify_check = await axios.post("http://localhost:9000/vonage_verify/check", {
+            data: {
+                code: verify_code
+            }
+        })
+        .then(res => {
+            console.log(res, " -verify_check")
+        })
 
     }
 
@@ -107,6 +127,17 @@ const LoginV2 = ( { accountActions, account, currentAccount } ) => {
                             > SIGN IN 
                             </button> 
                         </div>
+
+                        <div style={askVerification === false ? {opacity: 0} : {opacity: 1}}>
+                            <label> Verification Code </label>
+                            <input
+                                type="verification_code"
+                                name="verification_code"
+                                value={verificationCode}
+                                onChange={(e) => setVerificationCode(e.target.value)}
+                            />
+                            <button onClick={(e) => check_verification(e, verificationCode)}> submit code </button>
+                        </div>
                         
 
                     </form>
@@ -122,8 +153,7 @@ const LoginV2 = ( { accountActions, account, currentAccount } ) => {
 
                     <div>
                         <Link to="/create_account"> <button className="item_button"> CREATE AN ACCOUNT </button> </Link> 
-                    </div> 
-
+                    </div>
 
                 </div>
             </div>
