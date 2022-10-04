@@ -6,6 +6,7 @@ import Login from "./Login"
 import LoginV2 from "./LoginV2";
 import LoginV3 from "./LoginV3";
 import CreateAccount from "./CreateAccount";
+import CreateAccountV2 from "./CreateAccountV2";
 
 import Header from "./header"
 import Footer from "./footer"
@@ -36,7 +37,7 @@ const App = ( { products } ) => {
                         <Route path="/" exact component={HomePage}/>
 
                         <Route path="/login" exact component={LoginV3} />
-                        <Route path="/create_account" exact component={CreateAccount} />
+                        <Route path="/create_account" exact component={CreateAccountV2} />
 
                         <Route path="/product/boxing_glove" exact render={() => (
 

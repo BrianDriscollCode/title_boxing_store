@@ -9,6 +9,7 @@ login = require("./routes/login");
 loginV2 = require("./routes/loginV2")
 addCartItem = require("./routes/addCartItem");
 vonage_verify = require("./routes/vonage_verify_request");
+create_account = require("./routes/create_account");
 
 
 
@@ -31,6 +32,7 @@ server.use("/login", login)
 server.use("/loginV2", loginV2)
 server.use("/addCartItem", addCartItem)
 server.use("/vonage_verify", vonage_verify)
+server.use("/create_account", create_account)
 // server.use("/createAccount", createAccount)
 // catch 404 and forward to error handler
 server.use(function(req, res, next) {

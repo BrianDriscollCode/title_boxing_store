@@ -33,6 +33,7 @@ const Product_Page = ( { products, productSetter } ) => {
         await setFilterVariable(filterVariableOption)
         await setFilterType(filterTypeOption);
 
+        console.log(filterVariableOption)
     }
 
 

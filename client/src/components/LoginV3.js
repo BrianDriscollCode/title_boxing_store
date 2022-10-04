@@ -45,11 +45,11 @@ const LoginV2 = ( { accountActions, account, currentAccount } ) => {
 
                 console.log(local_account_variable.phone_number)
                 //begin verification/send text code
-                // let start_verification = axios.post("http://localhost:9000/vonage_verify/request", {
-                //     data: {
-                //         number: local_account_variable.phone_number
-                //     }
-                // })
+                let start_verification = axios.post("http://localhost:9000/vonage_verify/request", {
+                    data: {
+                        number: local_account_variable.phone_number
+                    }
+                })
             }
         })
 
@@ -175,7 +175,11 @@ const LoginV2 = ( { accountActions, account, currentAccount } ) => {
                         keep more than one address, track orders and more. </p> 
 
                     <div>
-                        <Link to="/create_account"> <button className="item_button"> CREATE AN ACCOUNT </button> </Link> 
+                        <Link to="/create_account"> 
+                            <button className="item_button"> 
+                                CREATE AN ACCOUNT 
+                            </button> 
+                        </Link> 
                     </div>
 
                 </div>

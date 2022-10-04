@@ -12,7 +12,6 @@ export default (current_account = initial_account, action) => {
             return [{...current_account[0], cart: [...current_account[0].cart, action.payload.cart]}]
         default: 
             return [...current_account]
-
     }
 
 }

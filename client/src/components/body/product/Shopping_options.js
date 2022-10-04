@@ -3,6 +3,7 @@ import { Plus } from "react-bootstrap-icons"
 import Brand from "./options/Brand";
 import Category from './options/Category';
 import Price from "./options/Price";
+import PriceV2 from "./options/PriceV2"
 
 
 //Parent - product/Page.js
@@ -77,7 +78,8 @@ const Shopping_Options = ( { changeCategoryVariable, productSetter } ) => {
 
             {
                 showPrice ? 
-                    <Price changeCategoryVariable={changeCategoryVariable} /> :
+                    <PriceV2 changeCategoryVariable={changeCategoryVariable} productSetter={productSetter}/> :
+                    // <Price changeCategoryVariable={changeCategoryVariable}/>:
                     null
             }
 

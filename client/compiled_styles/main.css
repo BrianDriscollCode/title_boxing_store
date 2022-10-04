@@ -4,6 +4,64 @@
   width: 100%;
 }
 
+.table_cell {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.table_cell label {
+
+  align-self: start;
+  
+
+}
+
+.table_cell input, .table_cell select  {
+  height: 30px;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #a0a0a0;
+  font-size: 18px;
+}
+
+
+#account_form_container {
+
+  width:  80%;
+  margin: 4em auto 5em auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#create_account_title_wrapper {
+
+  width: 80%;
+  align-self: center;
+  margin-top: 2em;
+  color: black;
+  margin: 2em auto 0 auto;
+
+}
+
+#birth_date_header {
+
+  align-self: center;
+  margin: 0 0 10px 0;
+
+}
+
+#table_cell_button button {
+
+  margin-top: 10px;
+
+}
+
 #home_page_container {
   width: 100%;
   align-self: center;
@@ -1620,9 +1678,9 @@
 
 .table_cell input, .table_cell select {
   height: 30px;
-  width: 100%;
   border-radius: 5px;
   border: 1px solid #a0a0a0;
+  padding-left: 15px;
   font-size: 18px;
 }
 
@@ -1652,58 +1710,6 @@
   margin-top: 10px;
 }
 
-.slider {
-  height: 5px;
-  position: relative;
-  background: #ddd;
-  border-radius: 5px;
-}
-
-#progress {
-  height: 100%;
-  left: 25%;
-  right: 25%;
-  position: absolute;
-  border-radius: 5px;
-  background: #17A2B8;
-}
-
-.range_input {
-  position: relative;
-}
-
-.range_input input {
-  position: absolute;
-  width: 100%;
-  height: 5px;
-  top: -7px;
-  background: none;
-  pointer-events: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-}
-
-input[type=range]::-webkit-slider-thumb {
-  height: 17px;
-  width: 17px;
-  border-radius: 50%;
-  background: #17A2B8;
-  pointer-events: auto;
-  -webkit-appearance: none;
-  box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
-}
-
-input[type=range]::-moz-range-thumb {
-  height: 17px;
-  width: 17px;
-  border: none;
-  border-radius: 50%;
-  background: #17A2B8;
-  pointer-events: auto;
-  -moz-appearance: none;
-  box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
-}
-
 body {
   margin: 0 0 0 0;
   color: rgb(70, 70, 70);
@@ -1726,4 +1732,4 @@ a {
 
 .alert_text {
   color: rgb(198, 28, 52);
-}
+}/*# sourceMappingURL=main.css.map */
