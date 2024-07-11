@@ -18,12 +18,12 @@ This application uses reusable components to create web pages using structured d
 #### On the website: 
 
 1. Product:
-  a) https://title-boxing-store.vercel.app/#/product/boxing_glove
-  b) https://title-boxing-store.vercel.app/#/product/shoes
-  c) https://title-boxing-store.vercel.app/#/product/headgear
+- https://title-boxing-store.vercel.app/#/product/boxing_glove
+- https://title-boxing-store.vercel.app/#/product/shoes
+-  https://title-boxing-store.vercel.app/#/product/headgear
 2. Single Product (just 2 examples, many more on website):
-  a) https://title-boxing-store.vercel.app/#/product/headgear/14
-  b) https://title-boxing-store.vercel.app/#/product/boxing_glove/2
+- https://title-boxing-store.vercel.app/#/product/headgear/14
+- https://title-boxing-store.vercel.app/#/product/boxing_glove/2
 3. Cart -> https://title-boxing-store.vercel.app/#/cart
 4. Checkout -> https://title-boxing-store.vercel.app/#/checkout
 
