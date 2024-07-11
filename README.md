@@ -7,7 +7,7 @@ This program represents a way to build a website by creating reusable components
 
 ### Reusable Components
 
-This application uses reusable components to create web pages using structured data. Specifically, these are the reusable components in the application:
+This application uses reusable components to create web pages using structured data. Specifically, these are the reusable components in the application code. The React JavaScript files in these folders utilize redux state to populate the page with user account information and product information:
 
 1. components/body/product
 2. component/body/product/single
@@ -15,7 +15,17 @@ This application uses reusable components to create web pages using structured d
 4. component/body/cart
 5. component/body/checkout
 
-The React JavaScript files in these folders utilize redux state to populate the page with user account information and product information. 
+#### On the website: 
+
+1. Product:
+  a) https://title-boxing-store.vercel.app/#/product/boxing_glove
+  b) https://title-boxing-store.vercel.app/#/product/shoes
+  c) https://title-boxing-store.vercel.app/#/product/headgear
+2. Single Product (just 2 examples, many more on website):
+  a) https://title-boxing-store.vercel.app/#/product/headgear/14
+  b) https://title-boxing-store.vercel.app/#/product/boxing_glove/2
+3. Cart -> https://title-boxing-store.vercel.app/#/cart
+4. Checkout -> https://title-boxing-store.vercel.app/#/checkout
 
 ### To Start Application 
 
