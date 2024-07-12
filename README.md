@@ -3,11 +3,11 @@
 
 ### Objective With this Project
 
-This program demonstrates a way to build a website by creating reusable components, enabling clients to list products without building new web pages for every product type or item. This approach is cost-effective for building websites while also enabling account functionality.
+This program showcases an efficient method for building a website using reusable components. It allows clients to list products without needing to create new web pages for each product type or item. This approach is cost-effective and also supports account functionality, making it ideal for scalable website development.
 
 ### Reusable Components
 
-This application uses reusable components to create web pages using structured data. The React JavaScript files in these folders utilize Redux state to populate the page with user account information and product information:
+This application uses reusable components to generate web pages from structured data. The React JavaScript files in these folders leverage Redux state to display user account and product information on the page:
 
 1. components/body/product
 2. component/body/product/single
